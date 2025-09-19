@@ -23,6 +23,7 @@ function CashewWineDetails() {
                 tc grid gtc1 justify-center items-center h-100"
             >
                 <img src={vw2}
+                    alt=""
                     className="gc1s1 gr1s1 cover vh-50 flex"
                 />
                 <hgroup className="gc1s1 gr1s1 bg-black-50 h-100 flex flex-column justify-center items-center">
