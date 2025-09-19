@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import vw1 from "../../assets/images/wines/vw_1.jpg";
+// import vw1 from "../../assets/images/wines/vw_1.jpg";
 import vw2 from "../../assets/images/wines/cashewWine/vw8.jpg";
 
 function CashewWine() {

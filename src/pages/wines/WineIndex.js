@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import ppp from "../../assets/images/wines/vw_7.jpg";
 import ttt from "../../assets/images/wines/vw_7.jpg";
-import sss from "../../assets/images/wines/vw_7.jpg";
+// import sss from "../../assets/images/wines/vw_7.jpg";
 function WineIndex() {
     
     return (

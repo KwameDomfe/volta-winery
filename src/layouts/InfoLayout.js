@@ -1,6 +1,5 @@
 import { NavLink, Outlet } from "react-router-dom";
-import MainHeader from "./MainHeader";
-import MainFooter from "./MainFooter";
+
 
 function WineLayout() {
 return (

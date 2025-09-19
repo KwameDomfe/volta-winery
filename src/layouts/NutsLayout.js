@@ -1,6 +1,6 @@
 import { NavLink, Outlet } from "react-router-dom";
-import MainHeader from "./MainHeader";
-import MainFooter from "./MainFooter";
+// import MainHeader from "./MainHeader";
+// import MainFooter from "./MainFooter";
 
 function NutsLayout() {
 return (
@@ -15,7 +15,10 @@ return (
             white-90"
         >
             <div>
-                <h2 className="pt4-00 sticky top0">Volta Winery Nuts</h2>
+                <h2 className="pt4-00 sticky top0"
+                >
+                    Volta Winery Nuts
+                </h2>
                 <p>
                     Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .
                 </p>
