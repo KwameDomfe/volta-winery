@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import ppp from "../../assets/images/wines/vw_7.jpg";
-import ttt from "../../assets/images/wines/vw_7.jpg";
+import ppp from "../../../assets/images/wines/vw_7.jpg";
+import ttt from "../../../assets/images/wines/vw_7.jpg";
 // import sss from "../../assets/images/wines/vw_7.jpg";
 function WineIndex() {
     
     return (
-        <div className="w-100 tc mb1-00 bg-white mt5-00 ma1-00"
+        <div className="w-100 ma1-00 mb1-00 bg-white mt5-00  tc"
         > 
             <header className="grid gtc2
                 vh-60"
@@ -129,12 +129,7 @@ function WineIndex() {
                                 Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .
                                 Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .
                             </p>
-                                <p className="mb2-00">
-                                Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .
-                                Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .
-                                Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .
-                            </p>
-                                <p className="mb2-00">
+                            <p className="mb2-00">
                                 Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .
                                 Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .
                                 Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .
@@ -169,16 +164,11 @@ function WineIndex() {
                                 Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .
                                 Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .
                             </p>
-                                <p className="mb2-00">
+                            <p className="mb2-00">
                                 Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .
                                 Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .
                                 Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .
-                            </p>
-                                <p className="mb2-00">
-                                Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .
-                                Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .
-                                Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .
-                            </p>
+                            </p>                   
                             <Link to="coffee-wine"
                                 className="white ba pa1-00"
                             > 
@@ -193,8 +183,7 @@ function WineIndex() {
                 Pay us a visit section under development....
             </section>
         </div>
-       
     );
-    }
+}
 
 export default WineIndex;

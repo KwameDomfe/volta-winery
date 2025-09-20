@@ -3,48 +3,47 @@ import './assets/css/style.css';
 import './assets/css/Utility_Classes.css';
 import './assets/css/gdb_normalize.css';
 import './assets/css/style.css'
+
 // React Router Dom
 import {
     createBrowserRouter,
     RouterProvider,
-    // Route,
-    // createRoutesFromElements,
 } from "react-router-dom";
 
 // Layouts
-import RootLayout from './layouts/RootLayout';
-import FruitJuicesLayout from './layouts/FruitJuicesLayout';
-import NutsLayout from './layouts/NutsLayout';
-import WineLayout from "./layouts/WineLayout";
-import InfoLayout from "./layouts/InfoLayout";
+import RootLayout from './components/layouts/RootLayout';
+import FruitJuicesLayout from './components/layouts/FruitJuicesLayout';
+import NutsLayout from './components/layouts/NutsLayout';
+import WineLayout from "./components/layouts/WineLayout";
+import InfoLayout from "./components/layouts/InfoLayout";
 
 // Pages
 // Home Page
-import HomePage from './pages/HomePage';
+import HomePage from './components/pages/HomePage';
 
 // Wines Pages
-import WineIndex from './pages/wines/WineIndex';
-import CocoaWine from "./pages/wines/CocoaWine";
-import CashewWine from "./pages/wines/CashewWine";
-import CoffeeWine from "./pages/wines/CoffeeWine";
+import WineIndex from './components/pages/wines/WineIndex';
+import CocoaWine from "./components/pages/wines/CocoaWine";
+import CashewWine from "./components/pages/wines/CashewWine";
+import CoffeeWine from "./components/pages/wines/CoffeeWine";
 // Fruit Juices Pages
-import FruitJuicesIndex from './pages/fruitJuices/FruitJuicesIndex';
-import CashewJuice from './pages/fruitJuices/CashewJuice';
-import CocoaJuice from './pages/fruitJuices/CocoaJuice';
-import CoffeeJuice from './pages/fruitJuices/CoffeeJuice';
+import FruitJuicesIndex from './components/pages/fruitJuices/FruitJuicesIndex';
+import CashewJuice from './components/pages/fruitJuices/CashewJuice';
+import CocoaJuice from './components/pages/fruitJuices/CocoaJuice';
+import CoffeeJuice from './components/pages/fruitJuices/CoffeeJuice';
 
 // Nuts Pages
-import NutsIndex from './pages/Nuts/NutsIndex';
-import CocoaNuts from "./pages/Nuts/CocoaNuts";
-import CashewNuts from "./pages/Nuts/CashewNuts";
-import CoffeeNuts from "./pages/Nuts/CoffeeNuts";
+import NutsIndex from './components/pages/Nuts/NutsIndex';
+import CocoaNuts from "./components/pages/Nuts/CocoaNuts";
+import CashewNuts from "./components/pages/Nuts/CashewNuts";
+import CoffeeNuts from "./components/pages/Nuts/CoffeeNuts";
 
 // Info Pages
-import InfoIndex from './pages/info/InfoIndex';
-import Contacts from "./pages/info/Contact";
-import Location from "./pages/info/Location";
-import OtherTopics from "./pages/info/OtherTopics";
-import CashewWineDetails from './pages/wines/CashewWineDetails';
+import InfoIndex from './components/pages/info/InfoIndex';
+import Contacts from "./components/pages/info/Contact";
+import Location from "./components/pages/info/Location";
+import OtherTopics from "./components/pages/info/OtherTopics";
+import CashewWineDetails from './components/pages/wines/CashewWineDetails';
 
 const router = createBrowserRouter(
     [
@@ -60,6 +59,7 @@ const router = createBrowserRouter(
                     // }),
                     // action: logoutUser,
                     // loader: redirectIfUser,
+                     // action: logoutUser,
                 },
                 {   path: "wines/",
                     element: <WineIndex />,

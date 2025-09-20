@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
-import MainHeader from "./MainHeader";
-import MainFooter from "./MainFooter";
+import MainHeader from "../organisms/MainHeader";
+import MainFooter from "../organisms/MainFooter";
 
 function RootLayout() {
 return (

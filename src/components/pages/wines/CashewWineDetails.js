@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import vw1 from "../../assets/images/wines/vw_1.jpg";
-import vw2 from "../../assets/images/wines/vw_2.jpg";
+import vw1 from "../../../assets/images/wines/vw_1.jpg";
+import vw2 from "../../../assets/images/wines/vw_2.jpg";
 
 function CashewWineDetails() {
     const relatedProducts = [
@@ -72,7 +72,7 @@ function CashewWineDetails() {
                                 relatedProducts.map(
                                     (ccc) =>{
                                         return (
-                                            <li>
+                                            <li key={ccc.id}>
                                                 <RelatedProductCard />
                                             </li>
                                         )

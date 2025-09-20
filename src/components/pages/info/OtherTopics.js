@@ -1,6 +1,7 @@
 function OtherTopics () {
     
     return (
+        
         <div className="">
             Other Topics
         </div>

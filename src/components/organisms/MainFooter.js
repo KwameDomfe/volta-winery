@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 
 function MainFooter() {
-    
     return (
         <footer className="flex justify-between items-center 
          bg-white-80"

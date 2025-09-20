@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import vw1 from "../../assets/images/wines/cashewWine/vw_13.jpg";
-import vw2 from "../../assets/images/wines/cashewWine/vw_13.jpg";
+import vw1 from "../../../assets/images/wines/cashewWine/vw_13.jpg";
+import vw2 from "../../../assets/images/wines/cashewWine/vw_13.jpg";
 
 function CoffeeWine() {
     const u = [
