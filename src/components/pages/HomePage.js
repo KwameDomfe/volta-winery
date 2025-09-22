@@ -7,6 +7,10 @@ import VoltaWineryLandingPageLeftBanner from "../organisms/VoltaWineryLandingPag
 import FruitJuiceCarousel from "../molecules/FruitJuiceCarousel";
 import WinesCarousel from "../molecules/WinesCarousel";
 import NutsCarousel from "../molecules/NutsCarousel";
+import PayUsAVisit from "../organisms/PayUsAVisit";
+import OrderForEveryOccation from "../organisms/OrderForEveryOccation";
+import ValuableStatsSection from "../organisms/ValuableStatsSection";
+import VoltaWineryLandingPageBanner from "../organisms/VoltaWineryLandingPageBanner";
 
 function HomePage() {
     
@@ -14,6 +18,23 @@ function HomePage() {
         <article id=""
             className="mt5-00"
         >
+            <div id=""
+                    className="grid gtc12 mb1-00"
+                >
+                    <BackgroundImage 
+                        image={ggg}
+                    />
+                    <VoltaWineryLandingPageBanner 
+                        url = "fruit-juices"
+                        title = "Volta Winery X'Mas Sales Promo."
+                        description1="This is an occasional advertisement banner for Volta Winery empty or half full are missing the point."
+                        description2="(15th November, 2025 - 15th January, 2026)."
+                    >
+                        {/* <FruitJuiceCarousel /> */}
+
+                    </VoltaWineryLandingPageBanner>
+            </div>
+            
             <header id="HomepageHeader"
                 className="mb1-00"
             >
@@ -38,6 +59,9 @@ function HomePage() {
                 </div>
                 
             </header>
+            <section className="bg-gold">
+                <ValuableStatsSection />
+            </section>
             <section id=""
                 className="mb1-00"
             >
@@ -59,10 +83,13 @@ function HomePage() {
                     
                 </div>
             </section>
+            <section>
+                <OrderForEveryOccation />
+            </section>
             <section id=""
                 className=""
             >
-                <div id=""
+                <div id="votla-winery-nuts"
                     className="grid gtc12"
                 >
                     <BackgroundImage 
@@ -81,6 +108,9 @@ function HomePage() {
                          <NutsCarousel  />
                     </VoltaWineryLandingPageRightBanner>
                 </div>
+            </section>
+            <section>
+                <PayUsAVisit />
             </section>
         </article> 
     );

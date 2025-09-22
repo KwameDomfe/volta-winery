@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import ppp from "../../../assets/images/wines/vw_7.jpg";
 import ttt from "../../../assets/images/wines/vw_7.jpg";
+import PayUsAVisit from "../../organisms/PayUsAVisit";
 // import sss from "../../assets/images/wines/vw_7.jpg";
 function WineIndex() {
     
@@ -177,10 +178,9 @@ function WineIndex() {
                         </div> 
                     </figure>
                 </div>
-            </section>
-            <section className="flex justify-center items-center vh-50 mt4-00
-                bg-black-50 white-90 f3-00">
-                Pay us a visit section under development....
+                <div className="gc1s12">
+                    <PayUsAVisit />
+                </div>
             </section>
         </div>
     );
