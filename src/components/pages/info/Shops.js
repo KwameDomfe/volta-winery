@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 // import vw1 from "../../assets/images/wines/vw_1.jpg";
 import vw2 from "../../../assets/images/placeholders/location.png";
 
-function Location() {
+function Shops() {
     const u = [
         {   id:'1',
             name:'country cashew wine'
@@ -28,13 +28,13 @@ function Location() {
                 />
                 <hgroup className="gc1s1 gr1s1 bg-black-50 h-100 flex justify-center items-center">
                     <h2 className=" mb0-00 f3-00 white-90">
-                        Location
+                        Shops
                     </h2>
                 </hgroup>
                 
                 <section className="flex flex-column justify-center items-center pv4-00 white-90"
                 >
-                    <h2>Volta Winery is Located ....</h2>
+                    <h2>Volta Winery products can be found in the following shops ....</h2>
                     <p>
                         Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice.
                     </p>
@@ -55,25 +55,24 @@ function Location() {
                         bg-white
                         mb4-0 pv2-00"
                     >
-                        <h2 className="mb0-00">You can find us here:</h2>
+                        <h2 className="mb0-00">You can buy our products from these shops.</h2>
                     </header>
-                    <LocationCard />    
                 </section>
             </main>
             
             <footer className="flex justify-center items-center h6-00 bg-blue0 white-90 tc"
             >
-                Volta Winery || Infodesk || Location
+                Volta Winery || Infodesk || Shops
             </footer>
         </article>
         
     );
     }
 
-export default Location;
+export default Shops;
 
 
-function LocationCard(params) {
+function ShopsCard(params) {
     return (
         <article className="bg-white"
         >

@@ -59,7 +59,7 @@ function HomePage() {
                 </div>
                 
             </header>
-            <section className="bg-gold">
+            <section className="bg-gold mb1-00">
                 <ValuableStatsSection />
             </section>
             <section id=""

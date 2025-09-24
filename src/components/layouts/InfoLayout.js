@@ -1,12 +1,60 @@
 import { NavLink, Outlet } from "react-router-dom";
 
+const infodeskNav = [
+    {
+        "id" : 1,
+        "name": "Shops",
+        "url" : "shops",
+    },
+    {
+        "id" : 2,
+        "name": "Contacts",
+        "url" : "contacts",
+    },
+    {
+        "id" : 3,
+        "name": "Location",
+        "url" : "location",
+    },
+    {
+        "id" : 4,
+        "name": "Research and Development",
+        "url" : "research-and-development",
+    },
+    {
+        "id" : 5,
+        "name": "Management",
+        "url" : "management",
+
+    },
+    {
+        "id" : 6,
+        "name": "History",
+        "url" : "history",
+    },
+    {
+        "id" : 7,
+        "name": "Workshops",
+        "url" : "workshops",
+    },
+    {
+        "id" : 8,
+        "name": "Mission Vision and Values",
+        "url" : "mission-vision-and-values",
+    },
+    {
+        "id" : 9,
+        "name": "other topics",
+        "url" : "other-topics",
+    },
+]
 
 function WineLayout() {
 return (
     <article id="wine-layout"
-        className="w-100 flex justify-start sticky">
+        className="w-100 flex justify-start ">
         
-        <header className="flex flex-column justify-between 
+        <header className="flex flex-column sticky top-0 justify-between 
             bg-black-80 .
             w-16-00 w-40-l 
             vh-100 
@@ -14,7 +62,7 @@ return (
             white-90"
         >
             <div>
-                <h2 className="pt4-00 sticky top0">Infodesk</h2>
+                <h2 className="pt4-00">Infodesk</h2>
                 <p>
                     Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .
                 </p>
@@ -26,37 +74,42 @@ return (
                 </p>
             </div>
             
-            <nav className="flex flex-column mb4-00"
-                ><li className="f2-00">
+            <nav className="flex flex-column mb4-0"
+                >
+                <div className="f2-00 mb1-00">
                     <NavLink to =""
                         className="white"
                     >
-                        Back to Info Page
+                        Back to Infodesk
                     </NavLink>
                     
-                </li>
-                <ul className="flex flex-column ba pa1-00 f1-50"
-                >
+                </div>
+                
                     
-                    <li className="mv1-00">
-                        <NavLink to = "location">
-                            Location
-                        </NavLink>
-                        
-                    </li>
+                     <ul className="flex flex-wra flex-column ba pa1-00 f1-25"
+                    >   
+                       { 
+                            infodeskNav.map(
+                                (x) => {
+                                    return (
+                                        <li key={x.id} className="mb1-00 pa0-50 bb b--white-20 mr1-00" 
+                                        >
+                                            <NavLink to = {x.url}
+                                                className="white"
+                                            >
+                                                {x.name}
+                                            </NavLink>
+                                            
+                                        </li>
+                                    )
+                                }
+                            )       
+                        }
+                    </ul> 
+                    
+                    
                 
-                    <li className="mv1-00">
-                        <NavLink to = "contacts">
-                            Contact
-                        </NavLink>
-                    </li>
                 
-                    <li className="mv1-00">
-                        <NavLink to = "other-topics">
-                            Other Tupics
-                        </NavLink>
-                    </li>
-                </ul> 
             </nav>
         </header>
         <div className="w-75">

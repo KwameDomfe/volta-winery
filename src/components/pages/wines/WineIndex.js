@@ -9,7 +9,7 @@ function WineIndex() {
         <div className="w-100 ma1-00 mb1-00 bg-white mt5-00  tc"
         > 
             <header className="grid gtc2
-                vh-60"
+                "
             >
                 <img src={ppp}
                     alt=""

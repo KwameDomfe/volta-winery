@@ -5,7 +5,7 @@ const ValuableStatsSection = () => {
         <section className="flex justify-center items-center 
             container container90
             vh-50 w-100
-            mv1-00 tc
+            tc
             
             white-90 f3-00"
         >

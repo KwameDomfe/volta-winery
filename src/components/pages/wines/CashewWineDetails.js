@@ -226,6 +226,7 @@ function WineDetailCard(params) {
 
 
 function RelatedProductCard(params) {
+    
     return (
         <article className="bg-white"
         >

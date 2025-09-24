@@ -44,6 +44,12 @@ import Contacts from "./components/pages/info/Contact";
 import Location from "./components/pages/info/Location";
 import OtherTopics from "./components/pages/info/OtherTopics";
 import CashewWineDetails from './components/pages/wines/CashewWineDetails';
+import Management from './components/pages/info/Management';
+import Shops from './components/pages/info/Shops';
+import RAndD from './components/pages/info/RandD';
+import History from './components/pages/info/History';
+import Workshops from './components/pages/info/Workshops';
+import MVV from './components/pages/info/MVV';
 
 const router = createBrowserRouter(
     [
@@ -158,6 +164,25 @@ const router = createBrowserRouter(
                         // loader: redirectIfUser,
                     },
                     {
+                        path: "shops",
+                        element: <Shops />,
+                        // loader: redirectIfUser,
+                    },
+                    {
+                        path: "research-and-development",
+                        element: <RAndD />,
+                        // loader: redirectIfUser,
+                    },
+                    {
+                        path: "mission-vision-and-values",
+                        element: <MVV />,
+                    },
+                    {
+                        path: "management",
+                        element: <Management />,
+                        // loader: redirectIfUser,
+                    },
+                    {
                         path: "contacts",
                         element :<Contacts/>,
                         // action: logoutUser,
@@ -165,6 +190,14 @@ const router = createBrowserRouter(
                     {
                         path: "other-topics",
                         element: <OtherTopics />,
+                    },
+                    {
+                        path: "history",
+                        element: <History />,
+                    },
+                    {
+                        path: "workshops",
+                        element: <Workshops />,
                     },
                     ],
                 },
