@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 // import vw1 from "../../assets/images/wines/vw_1.jpg";
 import vw2 from "../../../assets/images/placeholders/location.png";
 
@@ -73,18 +73,18 @@ function MVV() {
 export default MVV;
 
 
-function MVVCard(params) {
-    return (
-        <article className="bg-white"
-        >
-            <main>
-                <img src={vw2}
-                    alt=""
-                    className="w-100"
-                />
-            </main>
-            <footer className="pa1-00">
-            </footer>
-        </article>
-    )
-}
+// function MVVCard(params) {
+//     return (
+//         <article className="bg-white"
+//         >
+//             <main>
+//                 <img src={vw2}
+//                     alt=""
+//                     className="w-100"
+//                 />
+//             </main>
+//             <footer className="pa1-00">
+//             </footer>
+//         </article>
+//     )
+// }

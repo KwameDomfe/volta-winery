@@ -1,19 +1,19 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 // import vw1 from "../../assets/images/wines/vw_1.jpg";
 import vw2 from "../../../assets/images/placeholders/location.png";
 
 function History() {
-    const u = [
-        {   id:'1',
-            name:'country cashew wine'
-        },
-         {   id:'2',
-            name:'urban cashew wine'
-        },
-         {   id:'3',
-            name:'elite cashew wine'
-        },
-    ]
+    // const u = [
+    //     {   id:'1',
+    //         name:'country cashew wine'
+    //     },
+    //      {   id:'2',
+    //         name:'urban cashew wine'
+    //     },
+    //      {   id:'3',
+    //         name:'elite cashew wine'
+    //     },
+    // ]
 
     return (
         <article className="mt5-00
@@ -73,18 +73,18 @@ function History() {
 export default History;
 
 
-function HistoryCard(params) {
-    return (
-        <article className="bg-white"
-        >
-            <main>
-                <img src={vw2}
-                    alt=""
-                    className="w-100"
-                />
-            </main>
-            <footer className="pa1-00">
-            </footer>
-        </article>
-    )
-}
+// function HistoryCard(params) {
+//     return (
+//         <article className="bg-white"
+//         >
+//             <main>
+//                 <img src={vw2}
+//                     alt=""
+//                     className="w-100"
+//                 />
+//             </main>
+//             <footer className="pa1-00">
+//             </footer>
+//         </article>
+//     )
+// }

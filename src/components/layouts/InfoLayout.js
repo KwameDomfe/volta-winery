@@ -86,30 +86,29 @@ return (
                 </div>
                 
                     
-                     <ul className="flex flex-wra flex-column ba pa1-00 f1-25"
-                    >   
-                       { 
-                            infodeskNav.map(
-                                (x) => {
-                                    return (
-                                        <li key={x.id} className="mb1-00 pa0-50 bb b--white-20 mr1-00" 
+                <ul className="flex flex-wra flex-column ba pa1-00 f1-25"
+                >   
+                    { 
+                        infodeskNav.map(
+                            (x) => {
+                                return (
+                                    <li key={x.id} 
+                                        className="mb1-00 pa0-50 mr1-00 
+                                            bb b--white-20" 
+                                    >
+                                        <NavLink to = {x.url}
+                                            className="white"
                                         >
-                                            <NavLink to = {x.url}
-                                                className="white"
-                                            >
-                                                {x.name}
-                                            </NavLink>
-                                            
-                                        </li>
-                                    )
-                                }
-                            )       
-                        }
-                    </ul> 
+                                            {x.name}
+                                        </NavLink>
+                                        
+                                    </li>
+                                )
+                            }
+                        )       
+                    }
+                </ul> 
                     
-                    
-                
-                
             </nav>
         </header>
         <div className="w-75">

@@ -1,19 +1,19 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 // import vw1 from "../../assets/images/wines/vw_1.jpg";
 import vw2 from "../../../assets/images/infodesk/contactus.jpg";
 
 function Contact() {
-    const u = [
-        {   id:'1',
-            name:'country cashew wine'
-        },
-         {   id:'2',
-            name:'urban cashew wine'
-        },
-         {   id:'3',
-            name:'elite cashew wine'
-        },
-    ]
+    // const u = [
+    //     {   id:'1',
+    //         name:'country cashew wine'
+    //     },
+    //      {   id:'2',
+    //         name:'urban cashew wine'
+    //     },
+    //      {   id:'3',
+    //         name:'elite cashew wine'
+    //     },
+    // ]
 
     return (
         <article className="mt5-00
@@ -73,18 +73,18 @@ function Contact() {
 export default Contact;
 
 
-function ContactCard(params) {
-    return (
-        <article className="bg-white"
-        >
-            <main>
-                <img src={vw2}
-                    alt=""
-                    className="w-100"
-                />
-            </main>
-            <footer className="pa1-00">
-            </footer>
-        </article>
-    )
-}
+// function ContactCard(params) {
+//     return (
+//         <article className="bg-white"
+//         >
+//             <main>
+//                 <img src={vw2}
+//                     alt=""
+//                     className="w-100"
+//                 />
+//             </main>
+//             <footer className="pa1-00">
+//             </footer>
+//         </article>
+//     )
+// }
