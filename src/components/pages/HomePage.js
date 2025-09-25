@@ -1,5 +1,5 @@
 import fff from "../../assets/images/wines/vw_18.jpg";
-import ggg from '../../assets/images/fruitJuice/vw_6.jpg';
+import ggg from '../../assets/images/wines/vw_2.jpg';
 import hhh from '../../assets/images/nuts/vw_4.jpg'
 import BackgroundImage from "../atoms/BackgroundImage";
 import VoltaWineryLandingPageRightBanner from "../organisms/VoltaWineryLandingPageRightBanner";
@@ -26,8 +26,8 @@ function HomePage() {
                     />
                     <VoltaWineryLandingPageBanner 
                         url = "fruit-juices"
-                        title = "Volta Winery X'Mas Sales Promo."
-                        description1="This is an occasional advertisement banner for Volta Winery empty or half full are missing the point."
+                        title = 'Celebrate your Yam festival in Made in Ghana Style'
+                        description1="Get  your country cocoa wines from Volta Winery or Stadium Gate Shopping Mall in Ho."
                         description2="(15th November, 2025 - 15th January, 2026)."
                     >
                         {/* <FruitJuiceCarousel /> */}

@@ -13,7 +13,7 @@ const VoltaWineryLandingPageBanner = (
             bg-black-40 white-90
             "
         >
-            <div className="gc2s6 gr1s1 mt6-00">
+            <div className="gc2s7 gr1s1 mt6-00">
                 <HeroSectionBannerDetails 
                     title = {title}
                     description1={description1}

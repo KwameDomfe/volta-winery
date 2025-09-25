@@ -4,7 +4,7 @@ const HeroSectionBannerDetails = ({title, description1, description2, url}) => {
     return (
         <div>
             <hgroup>
-                <h2 className="f4-50">
+                <h2 className="f3-50">
                     {title}
                 </h2>
                 <p className="f1-75">{description1}</p>
