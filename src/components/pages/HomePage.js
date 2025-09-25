@@ -27,8 +27,8 @@ function HomePage() {
                     <VoltaWineryLandingPageBanner 
                         url = "fruit-juices"
                         title = 'Celebrate your Yam festival in Made in Ghana Style'
-                        description1="Get  your country cocoa wines from Volta Winery or Stadium Gate Shopping Mall in Ho."
-                        description2="(15th November, 2025 - 15th January, 2026)."
+                        description1="Get  your country cocoa wines from Volta Winery or Stadium Gate Shopping Mall in Ho"
+                        description2="(15th November, 2025 - 15th January, 2026)"
                     >
                         {/* <FruitJuiceCarousel /> */}
 
