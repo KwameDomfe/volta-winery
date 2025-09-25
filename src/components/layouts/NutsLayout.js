@@ -5,7 +5,7 @@ import { NavLink, Outlet } from "react-router-dom";
 function NutsLayout() {
 return (
     <article id="wine-layout"
-        className="vh-100 w-100 flex justify-start sticky">
+        className="vh-100 w-100 flex justify-start">
         
         <header className="flex flex-column justify-start 
             bg-black-80 .
@@ -64,12 +64,12 @@ return (
             </nav>
         </header>
         <div className="w-75">
-            <div className="h-100">
+            <div className="">
                 <Outlet />
             </div>
-            <footer className="bg-black-50">
+            {/* <footer className="pt2-00 bg-black-50">
                 Volta Winery || Nuts
-            </footer>
+            </footer> */}
         </div>
         
     </article>

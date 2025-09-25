@@ -37,6 +37,7 @@ import NutsIndex from './components/pages/Nuts/NutsIndex';
 import CocoaNuts from "./components/pages/Nuts/CocoaNuts";
 import CashewNuts from "./components/pages/Nuts/CashewNuts";
 import CoffeeNuts from "./components/pages/Nuts/CoffeeNuts";
+import CashewNutsDetails from "./components/pages/Nuts/CashewNutDetails";
 
 // Info Pages
 import InfoIndex from './components/pages/info/InfoIndex';
@@ -147,6 +148,7 @@ const router = createBrowserRouter(
                 }, 
                 {   path: "nuts/",
                     element: <NutsLayout />,
+                    
                     children: [
                     {
                         path: "cocoa-nuts",
@@ -154,13 +156,28 @@ const router = createBrowserRouter(
                         // loader: redirectIfUser,
                     },
                     {
+                        path: "cocoa-nuts/:id",
+                        element :<CashewNutsDetails />,
+                        // action: logoutUser,
+                    },
+                    {
                         path: "cashew-nuts",
                         element :<CashewNuts/>,
                         // action: logoutUser,
                     },
                     {
+                        path: "cashew-nuts/:id",
+                        element :<CashewNutsDetails />,
+                        // action: logoutUser,
+                    },
+                    {
                         path: "coffee-nuts",
                         element: <CoffeeNuts />,
+                    },
+                    {
+                        path: "coffee-nuts/:id",
+                        element :<CashewNutsDetails />,
+                        // action: logoutUser,
                     },
                     ],
                 },
