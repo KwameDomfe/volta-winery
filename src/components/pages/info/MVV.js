@@ -63,7 +63,7 @@ function MVV() {
             
             <footer className="flex justify-center items-center h6-00 bg-blue0 white-90 tc"
             >
-                Volta Winery || Infodesk || MVV
+                Volta Winery || Infodesk || Mission Vision and Values
             </footer>
         </article>
         

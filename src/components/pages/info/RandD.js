@@ -63,7 +63,7 @@ function RAndD() {
             
             <footer className="flex justify-center items-center h6-00 bg-blue0 white-90 tc"
             >
-                Volta Winery || Infodesk || RAndD
+                Volta Winery || Infodesk || Research And Development
             </footer>
         </article>
         

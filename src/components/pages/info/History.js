@@ -28,7 +28,7 @@ function History() {
                 />
                 <hgroup className="gc1s1 gr1s1 bg-black-50 h-100 flex justify-center items-center">
                     <h2 className=" mb0-00 f3-00 white-90">
-                        history
+                        History
                     </h2>
                 </hgroup>
                 

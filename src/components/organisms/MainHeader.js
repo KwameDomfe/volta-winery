@@ -52,10 +52,10 @@ function MainHeader() {
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to = "/info"
+                            <NavLink to = "/infodesk"
                                 className="white-90"
                             >
-                                info
+                                infodesk
                             </NavLink>
                         </li>
                     </ul> 

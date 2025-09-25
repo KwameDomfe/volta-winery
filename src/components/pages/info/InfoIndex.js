@@ -3,7 +3,7 @@ import asd from '../../../assets/images/placeholders/square.jpg'
 function InfoIndex() {
     
     return (
-        <div className="w-100 tc bg-white ma1-00 pb6-00 mt5-00"
+        <div className="w-100 tc ma1-00 pb6-00 mt5-00"
         > 
             <header className="grid gtc2
                 "

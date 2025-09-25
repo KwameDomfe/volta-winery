@@ -50,6 +50,7 @@ import RAndD from './components/pages/info/RandD';
 import History from './components/pages/info/History';
 import Workshops from './components/pages/info/Workshops';
 import MVV from './components/pages/info/MVV';
+import CashewJuiceDetails from './components/pages/fruitJuices/CashewJuiceDetails';
 
 const router = createBrowserRouter(
     [
@@ -113,18 +114,30 @@ const router = createBrowserRouter(
                     element: <FruitJuicesLayout />,
                     children: [
                     {
-                        path: "cocoa-juice",
+                        path: "cocoa-fruits-juice",
                         element: <CocoaJuice />,
                         // loader: redirectIfUser,
                     },
                     {
-                        path: "cashew-juice",
+                        path: "cocoa-fruits-juice/:id",
+                        element: <CashewJuiceDetails />,
+                    },
+                    {
+                        path: "cashew-fruits-juice",
                         element :<CashewJuice/>,
                         // action: logoutUser,
                     },
                     {
-                        path: "coffee-juice",
+                        path: "cashew-fruits-juice/:id",
+                        element: <CashewWineDetails />,
+                    },
+                    {
+                        path: "coffee-fruits-juice",
                         element: <CoffeeJuice />,
+                    },
+                    {
+                        path: "coffee-fruits-juice/:id",
+                        element: <CashewWineDetails />,
                     },
                     ],
                 },
@@ -151,11 +164,11 @@ const router = createBrowserRouter(
                     },
                     ],
                 },
-                {   path: "info/",
+                {   path: "infodesk/",
                     element: <InfoIndex />,
                         // loader: redirectIfUser,
                 }, 
-                {   path: "info/",
+                {   path: "infodesk/",
                     element: <InfoLayout />,
                     children: [
                     {
