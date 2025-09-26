@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 const HeroSectionBannerDetails = ({title, description1, description2, url}) => {
     return (
-        <div className="ph0-50 pv2-00 pv2-00-m  bg-black-40 br1-00">
+        <div className="ph0-50 pv4-00 pv2-00-m  bg-black-40 br1-00">
             <hgroup>
                 <h2 className="f2-00 f3-50-m ttc">
                     {title}
