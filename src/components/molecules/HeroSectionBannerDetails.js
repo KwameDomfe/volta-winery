@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 const HeroSectionBannerDetails = ({title, description1, description2, url}) => {
     return (
-        <div className="ph0-50 pv1-00 pv2-00-m  bg-black-40 br1-00">
+        <div className="ph0-50 pv2-00 pv2-00-m  bg-black-40 br1-00">
             <hgroup>
                 <h2 className="f2-00 f3-50-m ttc">
                     {title}
@@ -56,7 +56,7 @@ const HeroSectionBannerDetails = ({title, description1, description2, url}) => {
                     </Link>
                 </div>
             </div>
-            <div className="flex justify-center ggap1-00 mt2-00">
+            <div className="flex justify-center ggap1-00 mt4-00">
                 <div className="flex justify-between f1-25 gold tc w-20-m ba mb2-00"
                 >
                     <button className="w2-50 h2-50 pa0-50 bg-transparent white-90 b--none pointer">
