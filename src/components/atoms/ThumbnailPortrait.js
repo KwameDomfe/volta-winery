@@ -6,7 +6,7 @@ const ThumbnailPortrait = ({image, description}) => {
     >
         <img src={image}
             alt={description}
-            className="h-100 w10-00 cover"
+            className="h-100 w-100 w10-00-l cover"
         />
     </figure>
   )

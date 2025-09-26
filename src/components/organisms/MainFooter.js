@@ -40,16 +40,16 @@ function MainFooter() {
                             </Link>
                         </li>
                         <li>
-                            <Link to = "/info"
+                            <Link to = "/infodesk"
                                 className="white-9"
                             >
-                                info
+                                Infodesk
                             </Link>
                         </li>
                     </ul> 
                 </nav> 
                 <div>
-                    &copy;2025
+                    &copy;{new Date().getFullYear()}
                 </div>
                 
             </div>

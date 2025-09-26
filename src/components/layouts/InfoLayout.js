@@ -112,7 +112,7 @@ return (
             </nav>
         </header>
         <div className="w-75">
-            <div className="h-100">
+            <div className="">
                 <Outlet />
             </div>
         </div>

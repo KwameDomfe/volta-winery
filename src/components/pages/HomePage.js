@@ -35,7 +35,7 @@ function HomePage() {
                     </VoltaWineryLandingPageBanner>
             </div>
             
-            <header id="HomepageHeader"
+            <section id="Wines"
                 className="mb1-00"
             >
                 <div id=""
@@ -58,11 +58,13 @@ function HomePage() {
                     </VoltaWineryLandingPageRightBanner>
                 </div>
                 
-            </header>
-            <section className="bg-gold mb1-00">
+            </section>
+            <section id="" 
+                className="bg-gold mb1-00"
+            >
                 <ValuableStatsSection />
             </section>
-            <section id=""
+            <section id="FruitJuices"
                 className="mb1-00"
             >
                 <div id=""
@@ -83,10 +85,10 @@ function HomePage() {
                     
                 </div>
             </section>
-            <section>
+            <section id="ofea">
                 <OrderForEveryOccation />
             </section>
-            <section id=""
+            <section id="nuts"
                 className=""
             >
                 <div id="votla-winery-nuts"
@@ -109,7 +111,7 @@ function HomePage() {
                     </VoltaWineryLandingPageRightBanner>
                 </div>
             </section>
-            <section>
+            <section id="puav">
                 <PayUsAVisit />
             </section>
         </article> 

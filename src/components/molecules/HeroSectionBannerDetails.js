@@ -2,18 +2,18 @@ import { Link } from 'react-router-dom'
 
 const HeroSectionBannerDetails = ({title, description1, description2, url}) => {
     return (
-        <div className="baa ph1-00 pv2-00 bg-black-40 br1-00">
+        <div className="ph0-50 pv1-00 pv2-00-m  bg-black-40 br1-00">
             <hgroup>
-                <h2 className="f3-50 ttc">
+                <h2 className="f2-00 f3-50-m ttc">
                     {title}
                 </h2>
                 <div className="mv2-00">
-                    <p className="f1-75">{description1}</p>
-                    <p className="f1-75 b">{description2}</p>
+                    <p className="f1-25 f1-75-m">{description1}</p>
+                    <p className="f1-00 f1-75-m b">{description2}</p>
                 </div> 
             </hgroup>
 
-            <div className='mb2-00'>
+            <div className='dn db-m mb2-00'>
                 <h2>
                     Sales Shops:
                 </h2>
@@ -33,15 +33,15 @@ const HeroSectionBannerDetails = ({title, description1, description2, url}) => {
                 </div>
             </div>
             
-            <div>
+            <div className="w-100">
                 <h2>
                    Attractive Wholesale Discounted Prices:
                 </h2>
                 <div className='flex flex-column'>
-                    <div className='mr1-00  pb1-00'>
+                    <div className='mr1-0  pb1-00'>
                         5% Discount on all selected products
                     </div>
-                    <div className='mr1-00  pb1-00'>
+                    <div className='mr1-0  pb1-00'>
                         10% Discount on branded produts for special occasions.
                     </div>
                 </div>
@@ -57,7 +57,7 @@ const HeroSectionBannerDetails = ({title, description1, description2, url}) => {
                 </div>
             </div>
             <div className="flex justify-center ggap1-00 mt2-00">
-                <div className="flex justify-between f1-25 gold tc w-20 ba mb2-00"
+                <div className="flex justify-between f1-25 gold tc w-20-m ba mb2-00"
                 >
                     <button className="w2-50 h2-50 pa0-50 bg-transparent white-90 b--none pointer">
                         O

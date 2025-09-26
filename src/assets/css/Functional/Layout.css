@@ -515,6 +515,11 @@
 .gc1x2-m{grid-column: 1/2;}
 .gc1x3-m{grid-column: 1/2;}
 
+.gc2s6-m {grid-column: 2/8;}
+.gc2s8-m{grid-column: 2/10;}
+.gc2s9-m{grid-column: 2/11;}
+.gc6s5-m{grid-column: 6/11;}
+
 }
 
 @media(min-width:1024px) {
