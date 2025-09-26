@@ -8,7 +8,10 @@ function MainFooter() {
             <div className="flex justify-between container container90 pv1-00">
                 <div
                 >
-                Volta Winery
+                    <Link to="">
+                        Volta Winery
+                    </Link>
+                
                 </div>
                 <nav className="w-40"
                 >

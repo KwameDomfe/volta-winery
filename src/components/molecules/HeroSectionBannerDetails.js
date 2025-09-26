@@ -33,7 +33,7 @@ const HeroSectionBannerDetails = ({title, description1, description2, url}) => {
                 </div>
             </div>
             
-            <div className="w-100">
+            <div className="dn db-m w-100">
                 <h2>
                    Attractive Wholesale Discounted Prices:
                 </h2>

@@ -13,13 +13,7 @@ function MainHeader() {
     const handleMenuToggle = () =>{
         setToggle(!toggle)
     }
-        // return{
-            
         
-        //     
-        // }
-        
-    
     const menuItems = [
         {
             id : 1,
@@ -105,13 +99,13 @@ function MainHeader() {
                 
             </div>
             <aside className={`${toggle ? 'dn':'vh-100 flex flex-column'} 
-                 dn-m tc  pa1-00`
+                 dn-m tc  pa1-00 bg-black-90`
                 }
             >
-                <div className=" pr1-00 white-80 mb4-00 pt2-00 f1-25">
+                <div className=" pr1-00 white-80 mb2-00 pt1-00 f1-25">
                     <h2>Our Purpose</h2>
                     <p> 
-                        Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice . Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice . Taste our Made in Ghana Wines and our
+                        Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice. Taste our Made in Ghana Wines and our
                     </p>
                 </div>
                 <div className=""
@@ -126,15 +120,15 @@ function MainHeader() {
                                     (menu) => {
                                         return (
                                             <li key={menu.id}
-                                                className="bb b--white-60 w-100 pb0-50 mb2-00"
+                                                className="bb b--white-60 w-100 pb0-50 mb1-00"
                                                 onClick={() =>setToggle(handleMenuToggle)}
                                             >
                                                 <NavLink to = {menu.url}
                                                     className="white-90"
                                                 >
-                                                    <div className="mr0-50">
+                                                    <span className="mr0-50">
                                                         {menu.icon}
-                                                    </div>
+                                                    </span>
                                                     <span className="">{menu.name}</span> 
                                                 </NavLink> 
                                             </li>
@@ -145,7 +139,7 @@ function MainHeader() {
                         </ul> 
                     </nav>
                     <nav className="flex justify-center">
-                        <div className="flex justify-around w-100 w-60-s bg-white pa1-00">
+                        <div className="flex justify-around w-100 w-60-s bg-white pa0-50">
                             <div>
                                 <BiLogoFacebookCircle className="f2-00"/>
                             </div>
