@@ -3,17 +3,17 @@ import { Link } from "react-router-dom";
 function MainFooter() {
     return (
         <footer className="flex justify-between items-center 
-         bg-white-80"
+            bg-white-80"
         >
-            <div className="flex justify-between container container90 pv1-00">
-                <div
+            <div className="flex flex-column  items-center justify-between container container90 pv1-00">
+                <div className="mb0-50 f1-50"
                 >
                     <Link to="">
                         Volta Winery
                     </Link>
                 
                 </div>
-                <nav className="w-40"
+                <nav className="w-100 w-40-m"
                 >
                     <ul className="flex justify-between W-100"
                     >
@@ -52,7 +52,7 @@ function MainFooter() {
                     </ul> 
                 </nav> 
                 <div>
-                    &copy;{new Date().getFullYear()}
+                    (&copy; {new Date().getFullYear()})
                 </div>
                 
             </div>

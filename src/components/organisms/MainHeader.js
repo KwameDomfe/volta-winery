@@ -108,7 +108,7 @@ function MainHeader() {
                         Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice. Taste our Made in Ghana Wines and our
                     </p>
                 </div>
-                <div className=""
+                <div className="h-100"
                 >
                     <nav className=" f1-25 mb4-00"
                 >

@@ -15,17 +15,17 @@ import VoltaWineryLandingPageBanner from "../organisms/VoltaWineryLandingPageBan
 function HomePage() {
     
     return (
-        <article id=""
+        <article id="HomePage"
             className="mt5-00"
         >
-            <div id=""
+            <div id="adBanner"
                     className="grid gtc12 mb1-00"
                 >
                     <BackgroundImage 
                         image={ggg}
                     />
                     <VoltaWineryLandingPageBanner 
-                        url = "fruit-juices"
+                        url = ""
                         title = 'Celebrate your Yam festival in Made in Ghana Style'
                         description1="Get  your country cocoa wines from Volta Winery or Stadium Gate Shopping Mall in Ho"
                         description2="(15th November, 2025 - 15th January, 2026)"

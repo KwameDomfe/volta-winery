@@ -3,7 +3,7 @@ import hhh from "../../assets/images/fruitJuice/vw_6.jpg";
 import ThumbnailPortrait from "../atoms/ThumbnailPortrait";
 const FruitJuiceCarousel = () => {
   return (
-    <div className="gc2s5 gr2s1 flex ggap1-00 h12-00 pb2-00"
+    <div className="gc2s5 gr2s1 flex ggap1-00 h10-00 h12-00-m pb2-00"
     >
         <ThumbnailPortrait 
             image={ggg}

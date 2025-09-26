@@ -14,7 +14,7 @@ const VoltaWineryLandingPageLeftBanner = (
             bg-black-40 white-90
             "
         >
-            <div className="gc2s10 gc2s6-m gr1s1 mt6-00">
+            <div className="gc2s10 gc2s6-m gr1s1 mt4-00">
                 <LeftBanner 
                     title = {title}
                     description1={description1}
