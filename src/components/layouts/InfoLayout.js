@@ -97,7 +97,7 @@ function InfoLayout() {
                         <p>
                             Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .
                         </p>
-                        <div className="mv1-00">
+                        <div className="mt1-00 mb2-00">
                             <Link to="">
                                 Read More...
                             </Link>
