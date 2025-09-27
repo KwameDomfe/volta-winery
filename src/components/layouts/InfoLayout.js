@@ -1,4 +1,7 @@
 import { NavLink, Outlet } from "react-router-dom";
+import { AiOutlineMenu } from 'react-icons/ai';
+import { AiOutlineClose } from 'react-icons/ai';
+import { useState } from "react";
 
 const infodeskNav = [
     {
@@ -49,76 +52,102 @@ const infodeskNav = [
     },
 ]
 
-function WineLayout() {
-return (
-    <article id="wine-layout"
-        className="w-100 flex justify-start ">
-        
-        <header className="flex flex-column sticky top-0 justify-between 
-            bg-black-80 .
-            w-16-00 w-40-l 
-            vh-100 
-            pa1-00 
-            white-90"
+function InfoLayout() {
+
+    const [toggle, setToggle ]= useState(1)
+    
+    const handleMenuToggle = () =>{
+        setToggle(!toggle)
+    }
+
+    return (
+        <article id="wine-layout"
+            className="flex-m justify-start "
         >
-            <div>
-                <h2 className="pt4-00">Infodesk</h2>
-                <p>
-                    Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .
-                </p>
-                <p>
-                    Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .
-                </p>
-                <p>
-                    Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .
-                </p>
-            </div>
             
-            <nav className="flex flex-column mb4-0"
-                >
-                <div className="f2-00 mb1-00">
-                    <NavLink to =""
-                        className="white"
-                    >
-                        Back to Infodesk
-                    </NavLink>
+            <header className=" flex flex-column sticky top-0 justify-between 
+                bg-black-80 .
+                w-16-00 
+                vh-100-m
+                pa1-00 pt3-00 
+                white-90"
+            >
+                <div className="pt2-00 pt3-00-m mb1-00">
+                    <div className="flex items-center "> 
+                        <div className="dn-m mr0-50 white-90"
+                            onClick={handleMenuToggle}
+                        >
+                            {toggle 
+                                ? <AiOutlineMenu className="white f1-25"/> 
+                                : <AiOutlineClose className="white f1-25"/>
+                            }
+                        </div> 
+                        <h2 className="mb0-00">Infodesk</h2>
+                    </div>
+                    
                     
                 </div>
                 
+                <nav className={`${toggle ? 'dn flex-m flex-column' : ''}`}
+                >
+                    <div>
+                        <p>
+                            Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .
+                        </p>
+                        <p>
+                            Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .
+                        </p>
+                        <p>
+                            Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .
+                        </p>
+                        <p>
+                            Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .
+                        </p>
+                        <p>
+                            Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .
+                        </p>
+                    </div>
+                    <div className="f1-50 mb1-00">
+                        <NavLink to =""
+                            className="white"
+                        >
+                            Back to Infodesk
+                        </NavLink>
+                        
+                    </div>
                     
-                <ul className="flex flex-wra flex-column ba pa1-00 f1-25"
-                >   
-                    { 
-                        infodeskNav.map(
-                            (x) => {
-                                return (
-                                    <li key={x.id} 
-                                        className="mb1-00 pa0-50 mr1-00 
-                                            bb b--white-20" 
-                                    >
-                                        <NavLink to = {x.url}
-                                            className="white"
+                        
+                    <ul className="flex flex-column ba pa1-00 f1-25"
+                    >   
+                        { 
+                            infodeskNav.map(
+                                (x) => {
+                                    return (
+                                        <li key={x.id} 
+                                            className="mb0-25 pv0-50
+                                                bb b--white-20" 
+                                            onClick={handleMenuToggle}
                                         >
-                                            {x.name}
-                                        </NavLink>
-                                        
-                                    </li>
-                                )
-                            }
-                        )       
-                    }
-                </ul> 
-                    
-            </nav>
-        </header>
-        <div className="w-75">
+                                            <NavLink to = {x.url}
+                                                className="white"
+                                            >
+                                                {x.name}
+                                            </NavLink>
+                                            
+                                        </li>
+                                    )
+                                }
+                            )       
+                        }
+                    </ul> 
+                        
+                </nav>
+            </header>
             <div className="">
                 <Outlet />
             </div>
-        </div>
-        
-    </article>
-);
+        </article>
+    );
 }
 
-export default WineLayout;
+export default InfoLayout;

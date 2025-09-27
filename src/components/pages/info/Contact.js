@@ -16,7 +16,7 @@ function Contact() {
     // ]
 
     return (
-        <article className="mt5-00
+        <article className="mt5-00-m
             "
         >
             <header className=" bg-blue0
@@ -51,8 +51,9 @@ function Contact() {
             <main>
                 <section className="">
                     <header className="
-                        tc flex flex-column justify-center items-center
+                        flex flex-column justify-center items-center
                         bg-white
+                        tc 
                         mb4-0 pv2-00"
                     >
                         <h2 className="mb0-00">You can find us here:</h2>

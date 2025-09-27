@@ -16,7 +16,7 @@ function Management() {
     // ]
 
     return (
-        <article className="mt5-00
+        <article className="mt5-00-m
             "
         >
             <header className=" bg-blue0

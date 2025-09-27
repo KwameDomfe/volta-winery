@@ -16,7 +16,7 @@ function Workshops() {
     // ]
 
     return (
-        <article className="mt5-00
+        <article className="mt5-00-m w-100
             "
         >
             <header className=" bg-blue0

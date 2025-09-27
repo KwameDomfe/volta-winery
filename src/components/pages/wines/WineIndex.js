@@ -25,7 +25,7 @@ function WineIndex() {
                 </h2>
                 
             </header>
-            <section className="container container90 f1-25 pb4-00"
+            <section className="container container90 f1-25-m pb4-00"
             >
                 <h2 className="pv2-00"
                 >
@@ -61,10 +61,10 @@ function WineIndex() {
                 </p>
             </section>
             <section className="grid gtc12 ggap1-00 
-                container container90
+                container container90-m
                 pa1-00 bg-black-60 ttc "
             >
-                <div className="gc1s6 gr1s2 
+                <div className="gc1s12 gc1s6-m gr1s1 gr1s2-m 
                     flex justify-center items-center 
                     h-100 
                     bg-white-50"
@@ -76,8 +76,8 @@ function WineIndex() {
                         />
                         <div className="gc1s2 gr1s1
                             flex flex-column justify-center items-center
-                            ph4-00 
-                            white-90 bg-black-50 f1-25"
+                            ph2-00-s ph4-00-m tj
+                            white-90 bg-black-50 f1-00 f1-25-m"
                         >
                             <h2 className="f3-00  
                                 mb2-00 
@@ -101,14 +101,14 @@ function WineIndex() {
                                 Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .
                             </p>
                             <Link to="cocoa-wine"
-                                className="white ba pa1-00"
+                                className="white ba b--gold pa0-50"
                             > 
                                 Explore Cocoa Wines
                             </Link>
                         </div> 
                     </figure>
                 </div>
-                <div className="gc7s6 gr1s1 flex justify-center items-center h-100 bg-blue1">
+                <div className="gc1s12 gr2s1 gc7s6-m gr1s1-m flex justify-center items-center h-100 bg-blue1">
                     <figure className="grid gtc1 h-100">
                         <img src={ttt}
                             alt=""
@@ -116,8 +116,8 @@ function WineIndex() {
                         />
                         <div className="gc1s2 gr1s1
                             flex flex-column justify-center items-center
-                            ph4-00 
-                            white-90 bg-black-50 f1-25"
+                            ph2-00-s ph4-00-m tj
+                            white-90 bg-black-50 f1-00 f1-25-m"
                         >
                             <h2 className="f3-00  
                                 mb2-00 
@@ -136,14 +136,14 @@ function WineIndex() {
                                 Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .
                             </p>
                             <Link to="cashew-wine"
-                                className="white ba pa1-00"
+                                className="white ba b--gold pa0-50"
                             > 
                                 Explore Cashew Wines
                             </Link>
                         </div> 
                     </figure>
                 </div>
-                <div className="gc7s6 gr2s1 flex justify-center items-center  h-100 bg-black-50">
+                <div className="gc1s12 gr3s1 gc7s6-m gr2s1-m flex justify-center items-center  h-100 bg-black-50">
                     <figure className="grid gtc1 h-100">
                         <img src={ttt}
                             alt=""
@@ -151,8 +151,8 @@ function WineIndex() {
                         />
                         <div className="gc1s2 gr1s1
                             flex flex-column justify-center items-center
-                            ph4-00 
-                            white-90 bg-black-50 f1-25"
+                            ph2-00-s ph4-00-m tj
+                            white-90 bg-black-50 f1-25-m"
                         >
                             <h2 className="f3-00  
                                 mb2-00 
@@ -171,7 +171,7 @@ function WineIndex() {
                                 Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .
                             </p>                   
                             <Link to="coffee-wine"
-                                className="white ba pa1-00"
+                                className="white ba b--gold pa0-50"
                             > 
                                 Explore Coffee Wines
                             </Link>
