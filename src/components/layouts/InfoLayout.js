@@ -1,4 +1,4 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { Link, NavLink, Outlet } from "react-router-dom";
 import { AiOutlineMenu } from 'react-icons/ai';
 import { AiOutlineClose } from 'react-icons/ai';
 import { useState } from "react";
@@ -90,8 +90,20 @@ function InfoLayout() {
                 
                 <nav className={`${toggle ? 'dn flex-m flex-column' : ''}`}
                 >
-                    <div>
+                    <div className="mb2-00">
                         <p>
+                            Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .
+                        </p>
+                        <p>
+                            Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .
+                        </p>
+                        <div className="mt1-00">
+                            <Link to="">
+                                Read More...
+                            </Link>
+                        </div>
+                        
+                        {/* <p>
                             Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .
                         </p>
                         <p>
@@ -99,15 +111,9 @@ function InfoLayout() {
                         </p>
                         <p>
                             Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .
-                        </p>
-                        <p>
-                            Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .
-                        </p>
-                        <p>
-                            Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .
-                        </p>
+                        </p> */}
                     </div>
-                    <div className="f1-50 mb1-00">
+                    <div className="f1-25 mb1-00">
                         <NavLink to =""
                             className="white"
                         >
@@ -117,14 +123,14 @@ function InfoLayout() {
                     </div>
                     
                         
-                    <ul className="flex flex-column ba pa1-00 f1-25"
+                    <ul className="flex flex-column ba pa0-50 f1-00"
                     >   
                         { 
                             infodeskNav.map(
                                 (x) => {
                                     return (
                                         <li key={x.id} 
-                                            className="mb0-25 pv0-50
+                                            className="mb0-25 pv0-25
                                                 bb b--white-20" 
                                             onClick={handleMenuToggle}
                                         >
