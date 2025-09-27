@@ -90,9 +90,9 @@ function InfoLayout() {
                 
                 <nav className={`${toggle ? 'dn flex-m flex-column' : ''}`}
                 >
-                    <div className="mb2-00">
+                    <div className="mb1-00">
                         <p>
-                            Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .
+                            Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .
                         </p>
                         <p>
                             Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .
