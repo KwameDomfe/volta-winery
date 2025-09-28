@@ -18,8 +18,8 @@ function CashewWineDetails() {
     return (
         <article className=""
         >
-            <header className=" bg-blue0
-                tc grid gtc1 justify-center items-center h-100"
+            <header className="grid gtc1 justify-center items-center 
+                h-100 bg-blue0 tc "
             >
                 <img src={vw2}
                     alt=""
@@ -96,7 +96,7 @@ export default CashewWineDetails;
 
 function WineDetailCard(params) {
     return (
-        <article className="bg-white"
+        <article className="bg-white "
         >
             <header className="flex flex-wrap justify-between bg-red pa1-00 ">
                 <button>
@@ -106,14 +106,14 @@ function WineDetailCard(params) {
                     +
                 </button>
             </header>
-            <div className="flex">
-                <main className="w-50">
+            <div className="flex flex-column">
+                <main className="w-50-m">
                     <img src={vw1}
                         alt=""
                         className="w-100"
                     />
                 </main>
-                <aside className="w-50 pa1-00">
+                <aside className="w-50-m pa1-00">
                     <h2>country cashew wine</h2>
                     <p>GHC 56.69</p>
                     <p>Alcoholic</p>

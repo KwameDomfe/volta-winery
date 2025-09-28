@@ -26,6 +26,7 @@ import WineIndex from './components/pages/wines/WineIndex';
 import CocoaWine from "./components/pages/wines/CocoaWine";
 import CashewWine from "./components/pages/wines/CashewWine";
 import CoffeeWine from "./components/pages/wines/CoffeeWine";
+
 // Fruit Juices Pages
 import FruitJuicesIndex from './components/pages/fruitJuices/FruitJuicesIndex';
 import CashewJuice from './components/pages/fruitJuices/CashewJuice';

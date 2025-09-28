@@ -30,7 +30,7 @@ function FruitJuicesLayout() {
 
     return (
         <article id="fruits-juice-layout"
-            className="flex-m justify-start"
+            className="flex-m justify-start w-100"
         >
             <header className="flex flex-column justify-between 
                 sticky top-0 
