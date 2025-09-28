@@ -37,7 +37,7 @@ function InfoIndex() {
                 >
                     Our Odyssey
                 </h2>
-                <p>
+                <div>
                     Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .
 
                     Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice ... ... ...
@@ -53,7 +53,7 @@ function InfoIndex() {
 
                     Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice . */}
 
-                </p>
+                </div>
                 {/* <p>
                     Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .
 
