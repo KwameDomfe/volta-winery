@@ -1,79 +1,121 @@
-import { NavLink, Outlet } from "react-router-dom";
-// import MainHeader from "./MainHeader";
-// import MainFooter from "./MainFooter";
+import { useState } from "react";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { Link, NavLink, Outlet } from "react-router-dom";
+
+const nutsNav = [
+    {
+        "id" : 1,
+        "name": "cocoa nuts",
+        "url" : "cocoa-nuts",
+    },
+    {
+        "id" : 2,
+        "name": "cashew nuts",
+        "url" : "cashew-nuts",
+    },
+    {
+        "id" : 3,
+        "name": "coffee nuts",
+        "url" : "coffee-nuts",
+    },
+]
 
 function NutsLayout() {
-return (
-    <article id="wine-layout"
-        className="vh-100 w-100 flex justify-start">
+
+    const [toggle, setToggle ]= useState(1)
         
-        <header className="flex flex-column justify-start 
-            bg-black-80 .
-            w-16-00 w-40-l 
-            h-100 
-            pa1-00 
-            white-90"
+    const handleMenuToggle = () =>{
+        setToggle(!toggle)
+    }
+
+    return (
+        <article id="nut-layout"
+            className="flex-m justify-start"
         >
-            <div>
-                <h2 className="pt4-00 sticky top0"
-                >
-                    Volta Winery Nuts
-                </h2>
-                <p>
-                    Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .
-                </p>
-                <p>
-                    Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .
-                </p>
-                <p>
-                    Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .
-                </p>
-            </div>
-            
-            <nav className="ba"
+            <header className="flex flex-column justify-between 
+                sticky top-0 
+                bg-black-90
+                w20-00-m
+                vh-100-m
+                pa1-00 pt3-00 
+                white-90"
             >
-                <ul className="flex flex-column"
+                <div className="pt2-00 pt3-00-m mb1-00">
+                    <div className="flex items-center "> 
+                        <div className="dn-m mr0-50 white-90"
+                            onClick={handleMenuToggle}
+                        >
+                            {toggle 
+                                ? <AiOutlineMenu className="white f1-25"/> 
+                                : <AiOutlineClose className="white f1-25"/>
+                            }
+                        </div> 
+                        <div className="mb0-00">nuts</div>
+                    </div>    
+                </div>
+                
+                <nav className={
+                        `${toggle ? 'dn flex-m flex-column' : ''}`
+                    }
                 >
-                    <li>
+                    <div className="ba pa1-00"
+                    >
+                        <p>
+                            Taste our Made in Ghana nuts and our delicious Cocoa Fruit Juice .
+                        </p>
+                        <p>
+                            Taste our Made in Ghana nuts and our delicious Cocoa Fruit Juice .
+                        </p>
+                        <p>
+                            Taste our Made in Ghana nuts and our delicious Cocoa Fruit Juice .
+                        </p>
+                        <div className="mt1-00 mb2-00">
+                            <Link to="">
+                                Read More...
+                            </Link>
+                        </div>
+                    </div>
+
+                    <div className="f2-00">
                         <NavLink to =""
                             className="white"
                         >
-                            Back to Nuts Page
-                        </NavLink>
-                        
-                    </li>
-                    <li>
-                        <NavLink to = "cocoa-nuts">
-                            Cocoa Nuts
-                        </NavLink>
-                        
-                    </li>
-                
-                    <li>
-                        <NavLink to = "cashew-nuts">
-                            Cashew Nuts
-                        </NavLink>
-                    </li>
-                
-                    <li>
-                        <NavLink to = "coffee-nuts">
-                            Coffee Nuts
-                        </NavLink>
-                    </li>
-                </ul> 
-            </nav>
-        </header>
-        <div className="w-75">
-            <div className="">
+                            Back to nuts
+                        </NavLink>   
+                    </div>
+                    <ul className="flex flex-column  pa0-50 bg-white-10 f1-00"
+                    >   
+                        { 
+                            nutsNav.map(
+                                (x) => {
+                                    return (
+                                        <li key={x.id} 
+                                            className="mb0-25 pv0-25
+                                                bb b--white-20" 
+                                            onClick={handleMenuToggle}
+                                        >
+                                            <NavLink to = {x.url}
+                                                className="white"
+                                            >
+                                                {x.name}
+                                            </NavLink>
+                                            
+                                        </li>
+                                    )
+                                }
+                            )       
+                        }
+                    </ul> 
+                </nav>
+            </header>
+            
+            <div className="w-100-m">
                 <Outlet />
             </div>
-            {/* <footer className="pt2-00 bg-black-50">
-                Volta Winery || Nuts
-            </footer> */}
-        </div>
-        
-    </article>
-);
+            
+            
+        </article>
+    );
 }
 
 export default NutsLayout;

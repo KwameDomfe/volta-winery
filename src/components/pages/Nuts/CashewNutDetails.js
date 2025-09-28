@@ -16,8 +16,7 @@ function CashewNutsDetails() {
     ]
 
     return (
-        <article className="
-            "
+        <article className=""
         >
             <header className=" bg-blue0
                 tc grid gtc1 justify-center items-center h-100"
@@ -28,11 +27,10 @@ function CashewNutsDetails() {
                 />
                 <hgroup className="gc1s1 gr1s1 bg-black-50 h-100 flex flex-column justify-center items-center">
                     <h2 className=" mb0-00 f3-00 white-90">
-                        country cashew nuts
+                        cashew nuts
                     </h2> 
                     <section className="gc1s1 gr1s1 flex flex-column justify-center items-center pv4-00 white-90"
                     >
-                        
                         <p>
                             Taste our Made in Ghana nuts and our delicious Cocoa Fruit Juice.
                         </p>
@@ -42,11 +40,8 @@ function CashewNutsDetails() {
                         <p>
                             Taste our Made in Ghana nuts and our delicious Cocoa Fruit Juice.
                         </p>
-
                     </section>
                 </hgroup>
-                
-               
             </header>
             
             <main>
@@ -77,8 +72,7 @@ function CashewNutsDetails() {
                                             </li>
                                         )
                                     }
-                                )
-                                
+                                ) 
                             }
                         </ul>
                         
@@ -94,7 +88,7 @@ function CashewNutsDetails() {
         </article>
         
     );
-    }
+}
 
 export default CashewNutsDetails;
 
@@ -225,7 +219,7 @@ function NutsDetailCard(params) {
 }
 
 
-function RelatedProductCard(params) {
+function RelatedProductCard({params}) {
     
     return (
         <article className="bg-white"

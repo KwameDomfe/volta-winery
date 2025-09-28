@@ -1,6 +1,5 @@
 import { Link, NavLink, Outlet } from "react-router-dom";
-import { AiOutlineMenu } from 'react-icons/ai';
-import { AiOutlineClose } from 'react-icons/ai';
+import { AiOutlineMenu, AiOutlineClose} from 'react-icons/ai';
 import { useState } from "react";
 
 const infodeskNav = [
@@ -61,19 +60,20 @@ function InfoLayout() {
     }
 
     return (
-        <article id="wine-layout"
-            className="flex-m justify-start "
+        <article id="infodesk-layout"
+            className="flex-m justify-start"
         >
             
-            <header className=" flex flex-column sticky top-0 justify-between 
-                bg-black-80 .
-                w-16-00 
+            <header className=" flex flex-column justify-between 
+                sticky top-0 
+                bg-black-90
+                w20-00-m
                 vh-100-m
                 pa1-00 pt3-00 
                 white-90"
             >
                 <div className="pt2-00 pt3-00-m mb1-00">
-                    <div className="flex items-center "> 
+                    <div className="flex items-center"> 
                         <div className="dn-m mr0-50 white-90"
                             onClick={handleMenuToggle}
                         >
@@ -82,13 +82,13 @@ function InfoLayout() {
                                 : <AiOutlineClose className="white f1-25"/>
                             }
                         </div> 
-                        <h2 className="mb0-00">Infodesk</h2>
-                    </div>
-                    
-                    
+                        <div className="mb0-00">Infodesk</div>
+                    </div>  
                 </div>
                 
-                <nav className={`${toggle ? 'dn flex-m flex-column' : ''}`}
+                <nav className={
+                        `${toggle ? 'dn flex-m flex-column' : ''}`
+                    }
                 >
                     <div className="mb1-00">
                         <p>
@@ -102,17 +102,8 @@ function InfoLayout() {
                                 Read More...
                             </Link>
                         </div>
-                        
-                        {/* <p>
-                            Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .
-                        </p>
-                        <p>
-                            Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .
-                        </p>
-                        <p>
-                            Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .
-                        </p> */}
                     </div>
+                    
                     <div className="f1-25 mb1-00">
                         <NavLink to =""
                             className="white"
@@ -123,7 +114,7 @@ function InfoLayout() {
                     </div>
                     
                         
-                    <ul className="flex flex-column ba pa0-50 f1-00"
+                    <ul className="flex flex-column  pa0-50 bg-white-10 f1-00"
                     >   
                         { 
                             infodeskNav.map(
@@ -149,7 +140,7 @@ function InfoLayout() {
                         
                 </nav>
             </header>
-            <div className="">
+            <div className="w-100-m">
                 <Outlet />
             </div>
         </article>

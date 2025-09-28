@@ -70,11 +70,11 @@ function NutsIndex() {
                     bg-white-50"
                 >
                 <NutsCard
-                    name ="Cocoa Fruits Juice"
+                    name ="Cocoa Nuts"
                     description="Taste our Made in Ghana Nuts our delicious Cocoa Fruit Juice .
                     Taste our Made in Ghana Nuts our delicious Cocoa Fruit Juice .
                     Taste our Made in Ghana Nuts our delicious Cocoa Fruit Juice ."
-                    url="cocoa-fruits-juice"
+                    url="cocoa-nuts"
                 />
                 </div>
                 <div className="gc1s12 gc1s6-m gr2s1 
@@ -82,11 +82,11 @@ function NutsIndex() {
                     bg-white-50"
                 >
                 <NutsCard 
-                    name="Cashew Fruits Juice"
+                    name="Cashew Nuts"
                     description="Taste our Made in Ghana Nuts our delicious Cocoa Fruit Juice .
                     Taste our Made in Ghana Nuts our delicious Cocoa Fruit Juice .
                     Taste our Made in Ghana Nuts our delicious Cocoa Fruit Juice ."
-                    url="cashew-fruits-juice"
+                    url="cashew-nuts"
                 />
                 </div>
                 <div className="gc1s12 gc7s6-m gr3s1 gr2s1-m 
@@ -94,11 +94,11 @@ function NutsIndex() {
                     bg-white-50"
                 >
                 <NutsCard 
-                    name="Coffee Fruits Juice"
+                    name="Coffee Nuts"
                     description="Taste our Made in Ghana Nuts our delicious Cocoa Fruit Juice .
                     Taste our Made in Ghana Nuts our delicious Cocoa Fruit Juice .
                     Taste our Made in Ghana Nuts our delicious Cocoa Fruit Juice ."
-                    url="coffee-fruits-juice"
+                    url="coffee-nuts"
                 />
                 </div>
             

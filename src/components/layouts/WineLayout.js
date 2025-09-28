@@ -1,71 +1,121 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { useState } from "react";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { Link, NavLink, Outlet } from "react-router-dom";
+
+const winesNav = [
+    {
+        "id" : 1,
+        "name": "cocoa wine",
+        "url" : "cocoa-wine",
+    },
+    {
+        "id" : 2,
+        "name": "cashew wine",
+        "url" : "cashew-wine",
+    },
+    {
+        "id" : 3,
+        "name": "coffee wine",
+        "url" : "coffee-wine",
+    },
+]
 
 function WineLayout() {
-return (
-    <article id="wine-layout"
-        className="min-vh-100 w-100 flex justify-start sticky pt5-00">
+
+    const [toggle, setToggle ]= useState(1)
         
-        <header className="flex flex-column justify-between 
-            bg-black-80 .
-            w-16-00 w-40-l 
-            vh-100 
-            pa1-00 relative
-            white-90"
+    const handleMenuToggle = () =>{
+        setToggle(!toggle)
+    }
+
+    return (
+        <article id="wine-layout"
+            className="flex-m justify-start"
         >
-            <div className="ba pa1-00">
-                <h2 className="sticky top0">Volta Winery Wines</h2>
-                <p>
-                    Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .
-                </p>
-                <p>
-                    Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .
-                </p>
-                <p>
-                    Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .
-                </p>
-            </div>
-            
-            <nav className="flex flex-column mb4-00"
-                ><li className="f2-00">
-                    <NavLink to =""
-                        className="white"
-                    >
-                        Back to Wine Page
-                    </NavLink>
-                    
-                </li>
-                <ul className="flex flex-column ba pa1-00 f1-50"
+            <header className="flex flex-column justify-between 
+                sticky top-0 
+                bg-black-90
+                w20-00-m
+                vh-100-m
+                pa1-00 pt3-00 
+                white-90"
+            >
+                <div className="pt2-00 pt3-00-m mb1-00">
+                    <div className="flex items-center "> 
+                        <div className="dn-m mr0-50 white-90"
+                            onClick={handleMenuToggle}
+                        >
+                            {toggle 
+                                ? <AiOutlineMenu className="white f1-25"/> 
+                                : <AiOutlineClose className="white f1-25"/>
+                            }
+                        </div> 
+                        <div className="mb0-00">Wines</div>
+                    </div>    
+                </div>
+                
+                <nav className={
+                        `${toggle ? 'dn flex-m flex-column' : ''}`
+                    }
                 >
-                    
-                    <li className="mv1-00">
-                        <NavLink to = "cocoa-wine">
-                            Cocoa Wine
-                        </NavLink>
-                        
-                    </li>
-                
-                    <li className="mv1-00">
-                        <NavLink to = "cashew-wine">
-                            Cashew Wine
-                        </NavLink>
-                    </li>
-                
-                    <li className="mv1-00">
-                        <NavLink to = "coffee-wine">
-                            Coffee Wine
-                        </NavLink>
-                    </li>
-                </ul> 
-            </nav>
-        </header>
-        <div className="w-75">
-            <div className="h-100">
+                    <div className="ba pa1-00"
+                    >
+                        <p>
+                            Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .
+                        </p>
+                        <p>
+                            Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .
+                        </p>
+                        <p>
+                            Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice .
+                        </p>
+                        <div className="mt1-00 mb2-00">
+                            <Link to="">
+                                Read More...
+                            </Link>
+                        </div>
+                    </div>
+
+                    <div className="f2-00">
+                        <NavLink to =""
+                            className="white"
+                        >
+                            Back to Wines
+                        </NavLink>   
+                    </div>
+                    <ul className="flex flex-column  pa0-50 bg-white-10 f1-00"
+                    >   
+                        { 
+                            winesNav.map(
+                                (x) => {
+                                    return (
+                                        <li key={x.id} 
+                                            className="mb0-25 pv0-25
+                                                bb b--white-20" 
+                                            onClick={handleMenuToggle}
+                                        >
+                                            <NavLink to = {x.url}
+                                                className="white"
+                                            >
+                                                {x.name}
+                                            </NavLink>
+                                            
+                                        </li>
+                                    )
+                                }
+                            )       
+                        }
+                    </ul> 
+                </nav>
+            </header>
+            
+            <div className="w-100-m">
                 <Outlet />
             </div>
-        </div>
-        
-    </article>
-);
+            
+            
+        </article>
+    );
 }
 
 export default WineLayout;

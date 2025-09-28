@@ -16,8 +16,7 @@ function CashewWineDetails() {
     ]
 
     return (
-        <article className="
-            "
+        <article className=""
         >
             <header className=" bg-blue0
                 tc grid gtc1 justify-center items-center h-100"
@@ -32,7 +31,6 @@ function CashewWineDetails() {
                     </h2> 
                     <section className="gc1s1 gr1s1 flex flex-column justify-center items-center pv4-00 white-90"
                     >
-                        
                         <p>
                             Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice.
                         </p>
@@ -45,8 +43,6 @@ function CashewWineDetails() {
 
                     </section>
                 </hgroup>
-                
-               
             </header>
             
             <main>
@@ -77,8 +73,7 @@ function CashewWineDetails() {
                                             </li>
                                         )
                                     }
-                                )
-                                
+                                )  
                             }
                         </ul>
                         
@@ -94,7 +89,7 @@ function CashewWineDetails() {
         </article>
         
     );
-    }
+}
 
 export default CashewWineDetails;
 
