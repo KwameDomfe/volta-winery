@@ -42,8 +42,6 @@ import CashewNutsDetails from "./components/pages/Nuts/CashewNutDetails";
 
 // Info Pages
 import InfoIndex from './components/pages/info/InfoIndex';
-import Contacts from "./components/pages/info/ContactUs";
-import Location from "./components/pages/info/Location";
 import OtherTopics from "./components/pages/info/OtherTopics";
 import CashewWineDetails from './components/pages/wines/CashewWineDetails';
 import Management from './components/pages/info/Management';

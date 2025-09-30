@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import asd from '../../../assets/images/placeholders/square.jpg'
 import { BsClockHistory } from 'react-icons/bs';
 import { TbBrandShopee } from 'react-icons/tb';
-import { VscLocation } from 'react-icons/vsc';
+// import { VscLocation } from 'react-icons/vsc';
 import { GiArchiveResearch } from 'react-icons/gi';
 import { MdOutlineManageAccounts } from 'react-icons/md';
 import { MdOutlineMapsHomeWork } from 'react-icons/md';

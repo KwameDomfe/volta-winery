@@ -1,7 +1,7 @@
 // import { Link } from "react-router-dom";
 // import vw1 from "../../assets/images/wines/vw_1.jpg";
 import vw2 from "../../../assets/images/voltaWinery/vw_17.jpg";
-import vw3 from "../../../assets/images/placeholders/location.png";
+
 import { FaAnglesLeft } from 'react-icons/fa6';
 import { FaAnglesRight } from 'react-icons/fa6';
 function RandD() {
