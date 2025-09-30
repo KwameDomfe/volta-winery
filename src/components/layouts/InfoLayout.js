@@ -13,11 +13,7 @@ const infodeskNav = [
         "name": "Contacts",
         "url" : "contacts",
     },
-    {
-        "id" : 3,
-        "name": "Location",
-        "url" : "location",
-    },
+
     {
         "id" : 4,
         "name": "Research and Development",
@@ -61,7 +57,7 @@ function InfoLayout() {
 
     return (
         <article id="infodesk-layout"
-            className="flex-m justify-start w-100"
+            className="flex-m justify-start container90"
         >
             
             <header className=" flex flex-column justify-between 
@@ -140,7 +136,7 @@ function InfoLayout() {
                         
                 </nav>
             </header>
-            <div className="w-100-m">
+            <div className="w-100-m ">
                 <Outlet />
             </div>
         </article>

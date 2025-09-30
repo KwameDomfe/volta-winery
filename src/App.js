@@ -42,7 +42,7 @@ import CashewNutsDetails from "./components/pages/Nuts/CashewNutDetails";
 
 // Info Pages
 import InfoIndex from './components/pages/info/InfoIndex';
-import Contacts from "./components/pages/info/Contact";
+import Contacts from "./components/pages/info/ContactUs";
 import Location from "./components/pages/info/Location";
 import OtherTopics from "./components/pages/info/OtherTopics";
 import CashewWineDetails from './components/pages/wines/CashewWineDetails';
@@ -53,6 +53,7 @@ import History from './components/pages/info/History';
 import Workshops from './components/pages/info/Workshops';
 import MVV from './components/pages/info/MVV';
 import CashewJuiceDetails from './components/pages/fruitJuices/CashewJuiceDetails';
+import ContactUs from './components/pages/info/ContactUs';
 
 const router = createBrowserRouter(
     [
@@ -189,11 +190,11 @@ const router = createBrowserRouter(
                 {   path: "infodesk/",
                     element: <InfoLayout />,
                     children: [
-                    {
-                        path: "location",
-                        element: <Location />,
-                        // loader: redirectIfUser,
-                    },
+                    // {
+                    //     path: "location",
+                    //     element: <Location />,
+                    //     // loader: redirectIfUser,
+                    // },
                     {
                         path: "shops",
                         element: <Shops />,
@@ -215,7 +216,7 @@ const router = createBrowserRouter(
                     },
                     {
                         path: "contacts",
-                        element :<Contacts/>,
+                        element :<ContactUs/>,
                         // action: logoutUser,
                     },
                     {

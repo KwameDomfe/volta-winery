@@ -1,8 +1,9 @@
 // import { Link } from "react-router-dom";
 // import vw1 from "../../assets/images/wines/vw_1.jpg";
-import vw2 from "../../../assets/images/placeholders/location.png";
+import vw2 from "../../../assets/images/voltaWinery/vw_17.jpg";
+import vw3 from "../../../assets/images/placeholders/location.png";
 
-function RAndD() {
+function RandD() {
     // const u = [
     //     {   id:'1',
     //         name:'country cashew wine'
@@ -28,13 +29,13 @@ function RAndD() {
                 />
                 <hgroup className="gc1s1 gr1s1 bg-black-50 h-100 flex justify-center items-center">
                     <h2 className=" mb0-00 f3-00 white-90">
-                        Research And Development
+                        Research and Development
                     </h2>
                 </hgroup>
                 
                 <section className="flex flex-column justify-center items-center pv4-00 white-90"
                 >
-                    <h2>Volta Winery's products are backed by research and Development....</h2>
+                    <h2>Volta Winery can be Research and Developmented through the following addresses.</h2>
                     <p>
                         Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice.
                     </p>
@@ -49,31 +50,138 @@ function RAndD() {
             </header>
             
             <main>
-                <section className="">
-                    <header className="
-                        tc flex flex-column justify-center items-center
-                        bg-white
-                        mb4-0 pv2-00"
-                    >
-                        <h2 className="mb0-00">YWhat we have done in terms of research.</h2>
-                    </header>
+                <div className=" mv1-00">
                     
-                </section>
+                    <div id="Research and DevelopmentsAndDirection" className="flex flex-column justify-start">
+                        <div>
+                            <header className="tc">
+                                <hgroup className="mb2-00">
+                                    <h2>Research</h2> 
+                                
+                                    <p className="lh-copy">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, dicta nihil voluptatibus accusantium aspernatur beatae eius nisi fugiat, consequatur quod minus nesciunt laboriosam libero, quibusdam perferendis ut rerum provident et.
+                                    </p>
+                                    <p className="lh-copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, dicta nihil voluptatibus accusantium aspernatur beatae eius nisi fugiat, consequatur quod minus nesciunt laboriosam libero, quibusdam perferendis ut rerum provident et.
+                                    </p>
+                                </hgroup>
+                            </header>
+                            <div className="">
+                                
+                                <div className="grid gtc12 ggap2-00 w-100 pr1-00 mb4-00 tc">
+                                    <div className="gc1s6 gr1s1 flex items-center justify-center  bg-black-20"
+                                    >
+                                        <figure>
+                                            <figcaption className="pa1-00 mt1-00 ">
+                                                <h3 className="mv1-00">Wine Research</h3>
+                                                <p className="mb2-00">Research and Development Details</p>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div className="gc7s6 gr1s1 flex items-center justify-center bg-black-20 ">
+                                        <figure>
+                                            <figcaption className="pa1-00 mt1-00 ">
+                                                <h3 className="mv1-00">Nuts Research</h3>
+                                                <p className="mb2-00">Research and Development Details</p>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div className="gc1s6 gr2s1 flex items-center justify-center  bg-black-20"
+                                    >
+                                        <figure>
+                                            <figcaption className="pa1-00 mt1-00 ">
+                                                <h3 className="mv1-00">Fruit Juice Research</h3>
+                                                <p className="mb2-00">Research and Development Details</p>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div className="gc7s6 gr2s1 flex items-center justify-center bg-black-20 ">
+                                        <figure>
+                                            <figcaption className="pa1-00 mt1-00 ">
+                                                <h3 className="mv1-00">Other Research topics...</h3>
+                                                <p className="mb2-00">Research and Development Details</p>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="Research and DevelopmentsAndDirection" className="flex flex-column justify-start">
+                        <div>
+                            <header className="tc">
+                                <hgroup className="mb2-00">
+                                    <h2>Developments</h2> 
+                                
+                                    <p className="lh-copy">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, dicta nihil voluptatibus accusantium aspernatur beatae eius nisi fugiat, consequatur quod minus nesciunt laboriosam libero, quibusdam perferendis ut rerum provident et.
+                                    </p>
+                                    <p className="lh-copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, dicta nihil voluptatibus accusantium aspernatur beatae eius nisi fugiat, consequatur quod minus nesciunt laboriosam libero, quibusdam perferendis ut rerum provident et.
+                                    </p>
+                                </hgroup>
+                            </header>
+                            <div className=""
+                            >
+                                <div className="grid gtc12 ggap2-00 w-100 pr1-00 mb4-00 tc">
+                                    <div className="gc1s6 gr1s1 flex items-center justify-center  bg-black-20"
+                                    >
+                                        <figure>
+                                            <figcaption className="pa1-00 mt1-00 ">
+                                                <h3 className="mv1-00">Wine Develpments</h3>
+                                                <p className="mb2-00">Research and Development Details</p>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div className="gc7s6 gr1s1 flex items-center justify-center bg-black-20 ">
+                                        <figure>
+                                            <figcaption className="pa1-00 mt1-00 ">
+                                                <h3 className="mv1-00">Nuts Develpments</h3>
+                                                <p className="mb2-00">Research and Development Details</p>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div className="gc1s6 gr2s1 flex items-center justify-center  bg-black-20"
+                                    >
+                                        <figure>
+                                            <figcaption className="pa1-00 mt1-00 ">
+                                                <h3 className="mv1-00">Fruit Juice Develpments</h3>
+                                                <p className="mb2-00">Research and Development Details</p>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div className="gc7s6 gr2s1 flex items-center justify-center bg-black-20 ">
+                                        <figure>
+                                            <figcaption className="pa1-00 mt1-00 ">
+                                                <h3 className="mv1-00">Other Development topics...</h3>
+                                                <p className="mb2-00">Development Details</p>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <footer className="tc">
+                        <h2>Research and Developments Footer</h2>
+                    </footer>
+                </div>
             </main>
             
             <footer className="flex justify-center items-center h6-00 bg-blue0 white-90 tc"
             >
-                Volta Winery || Infodesk || Research And Development
+                Volta Winery || Infodesk || Research and Development
             </footer>
         </article>
         
     );
     }
 
-export default RAndD;
+export default RandD;
 
 
-// function RAndDCard(params) {
+// function Research and DevelopmentCard(params) {
 //     return (
 //         <article className="bg-white"
 //         >

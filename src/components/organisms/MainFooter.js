@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
 import { socialNav } from "../../assets/data/menuNav";
 import { HiOutlineMail } from 'react-icons/hi';
+import { FaNutritionix } from 'react-icons/fa';
+import { PiWineFill } from 'react-icons/pi';
+import { GiManualJuicer } from 'react-icons/gi';
+import { BiSolidBookContent } from 'react-icons/bi';
 // const mainmenu
 function MainFooter() {
     return (
@@ -214,16 +218,16 @@ function MainFooter() {
                         </div>
                     </div>
                     
-                    <div className="gc1s12 gc7s6-s gc9s4-m flex flex-column items-center">
+                    <div className="gc1s12 gc7s6-s gc8s4-m flex flex-column items-center">
                         <p className="lh-copy tj i ph2-00 mb2-00">
                             Volta Winery Country Wines made in Ghana.Make sure your glass is half full.We can supply you with Cocoa, Cashew,Coffee and our popular Red Ellen cocoa wine .…
                         </p>
                         <div className="w-60"><SocialNav />    </div>
                     </div>
                            
-                    <nav className="gc1s12 gc6s3-m gr1s1-m flex items-center justify-center w-40-m mv2-00 f1-50"
+                    <nav className="gc1s12 gc5s3-m gr1s1-m flex items-center justify-center bl br mv2-00 f1-50 w-100"
                     >
-                        <ul className="flex flex-column justify-between"
+                        {/* <ul className="flex flex-column justify-center items-center w-100 "
                         >
                             <li>
                                 <Link to = "wines/"
@@ -256,6 +260,42 @@ function MainFooter() {
                                     className="white-9"
                                 >
                                     Infodesk
+                                </Link>
+                            </li>
+                        </ul>  */}
+                        <ul className="grid gtc2 ggap0-25 justify-center items-center "
+                        >
+                            <li className="flex justify-center items-center ba b--white-10 w2-50 h2-50 pa0-50">
+                                <Link to = "wines/"
+                                    className="white-90"
+                                >
+                                    <PiWineFill />
+                                </Link>
+
+                                
+                            </li>
+                    
+                            <li className="flex justify-center  items-center ba b--white-10 w2-50 h2-50 pa0-50">
+                                <Link to = "fruit-juices"  
+                                    className="white-9"
+                                >
+                                    <GiManualJuicer  />
+                                </Link>
+                            </li>
+                
+                    
+                            <li className="flex justify-center  items-center ba b--white-10 w2-50 h2-50 pa0-50">
+                                <Link to = "/nuts"
+                                    className="white-9"
+                                >
+                                    <FaNutritionix />
+                                </Link>
+                            </li>
+                            <li className="flex justify-center  items-center ba b--white-10 w2-50 h2-50 pa0-50">
+                                <Link to = "/infodesk"
+                                    className="white-9"
+                                >
+                                    <BiSolidBookContent />
                                 </Link>
                             </li>
                         </ul> 

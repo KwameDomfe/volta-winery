@@ -96,11 +96,11 @@ export const menuItems = [
                 icon: <PiWineFill />,
                 url: "/infodesk/contacts", 
             },
-            {
-                name: 'location',
-                icon: <PiWineFill />,
-                url: "/infodesk/location", 
-            },
+            // {
+            //     name: 'location',
+            //     icon: <PiWineFill />,
+            //     url: "/infodesk/location", 
+            // },
             {
                 name: 'research and development',
                 icon: <PiWineFill />,

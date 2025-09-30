@@ -99,15 +99,15 @@ function InfoIndex() {
                     />
                 </div>
                 <div className="gc9s4 gr1s1
-                    shadow-5"
+                    shadow-5 bg-gold br0-50"
                 >
-                   <Card 
+                   {/* <Card 
                         title="Location"
                         description="Pay us a visit at our factory at Ho."
                         link="location"
                         icon = {<VscLocation />}
 
-                    />
+                    /> */}
                 </div>
                 
                 <div className="gc5s4 gr2s1 
