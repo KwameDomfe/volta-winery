@@ -1,12 +1,11 @@
 import { Link, NavLink} from "react-router-dom";
-import { FaNutritionix } from 'react-icons/fa';
-import { PiWineFill } from 'react-icons/pi';
-import { GiManualJuicer } from 'react-icons/gi';
-import { BiSolidBookContent } from 'react-icons/bi';
+
 import { AiOutlineMenu } from 'react-icons/ai';
 import { AiOutlineClose } from 'react-icons/ai';
 import { BiLogoFacebookCircle } from 'react-icons/bi';
 import { useState } from "react";
+import { menuItems } from "../../assets/data/menuNav";
+
 function MainHeader() {
     const [toggle, setToggle ]= useState(1)
 
@@ -14,38 +13,12 @@ function MainHeader() {
         setToggle(!toggle)
     }
         
-    const menuItems = [
-        {
-            id : 1,
-            name: 'wines',
-            url: "wines",
-            icon: <PiWineFill />
-        },
-        {
-            id : 2,
-            name: 'fruit juices',
-            url: "fruit-juices",
-            icon: <GiManualJuicer />
-        },
-        {
-            id : 3,
-            name: 'nuts',
-            url:"nuts",
-            icon: <FaNutritionix />
-        },
-        {
-            id : 4,
-            name: 'infodesk',
-             url: "infodesk",
-            icon: <BiSolidBookContent />
-        },
-    ]
-
+    
     return (
         <header className="flex flex-column justify-between items-center
             h4-0 w-100
             fixed z-5
-            bg-black-50
+            bg-black-90
            "
         >
             <div className="flex justify-between items-center 
