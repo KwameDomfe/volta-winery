@@ -4,6 +4,7 @@ import vw2 from "../../../assets/images/voltaWinery/vw_17.jpg";
 
 import { FaAnglesLeft } from 'react-icons/fa6';
 import { FaAnglesRight } from 'react-icons/fa6';
+import LayoutHeader from "../../layouts/LayoutHeader";
 function RandD() {
     // const u = [
     //     {   id:'1',
@@ -21,37 +22,15 @@ function RandD() {
         <article className="mt5-00-m
             "
         >
-            <header className=" bg-blue0
-                tc grid gtc1 justify-center items-center h-100"
-            >
-                <img src={vw2}
-                    alt=""
-                    className="gc1s1 gr1s1 cover vh-50 flex"
-                />
-                <hgroup className="gc1s1 gr1s1 bg-black-50 h-100 flex justify-center items-center">
-                    <h2 className=" mb0-00 f3-00 white-90">
-                       History
-                    </h2>
-                </hgroup>
-                
-                <section className="flex flex-column justify-center items-center pv4-00 white-90"
-                >
-                    <h2>Volta Winery can be Historyed through the following addresses.</h2>
-                    <p>
-                        Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice.
-                    </p>
-                    <p>
-                        Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice.
-                    </p>
-                    <p>
-                        Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice.
-                    </p>
-
-                </section>
-            </header>
+            <LayoutHeader title="History"
+                overview="Volta Winery can be Historyed through the following addresses."
+                image={vw2}
+                details={`Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice. Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice. Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice.`
+                }
             
+            />
             <main>
-                <div className=" mv1-00">
+                <div className=" mv1-00 pl1-00">
                     
                     <div id="HistorysAndDirection" className="flex flex-column justify-start">
                         <div>

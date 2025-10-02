@@ -1,61 +1,35 @@
-// import { Link } from "react-router-dom";
-// import vw1 from "../../assets/images/wines/vw_1.jpg";
 import vw2 from "../../../assets/images/placeholders/location.png";
 import ggg from '../../../assets/images/placeholders/avatar_01.png'
+import LayoutHeader from '../../layouts/LayoutHeader';
 function Management() {
-    // const u = [
-    //     {   id:'1',
-    //         name:'country cashew wine'
-    //     },
-    //      {   id:'2',
-    //         name:'urban cashew wine'
-    //     },
-    //      {   id:'3',
-    //         name:'elite cashew wine'
-    //     },
-    // ]
+    /* 
+    Hello
+    World
+    */
+    // Hello
+    // World
+    // !
 
-    return (
-        
+    return (  
         <div>
-            <header className=" bg-blue0
-                tc grid gtc1 justify-center items-center h-100"
-            >
-                <img src={vw2}
-                    alt=""
-                    className="gc1s1 gr1s1 cover vh-50 flex"
-                />
-                <hgroup className="gc1s1 gr1s1 bg-black-50 h-100 flex justify-center items-center">
-                    <h2 className=" mb0-00 f3-00 white-90">
-                        Management
-                    </h2>
-                </hgroup>
-                
-                <section className="flex flex-column justify-center items-center pv4-00 white-90"
-                >
-                    <h2>Volta Winery can be  through the following addresses.</h2>
-                    <p>
-                        Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice.
-                    </p>
-                    <p>
-                        Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice.
-                    </p>
-                    <p>
-                        Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice.
-                    </p>
-
-                </section>
-            </header>
+            <LayoutHeader title="Management"
+                overview="Volta Winery can be  through the following addresses."
+                image={vw2}
+                details={`Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice. Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice. Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice.`
+                }
+            
+            />
+            
             <div id="FacultyAndStaff"
-                className="min-vh-50 h-100 flex flex-column justify-start ml1-00 mt5-00"
+                className="h-100 flex flex-column justify-start pl1-00 mt5-00"
             >
-                <hgroup className="mb2-00">
+                <section className="mb2-00">
                     <h1 className="f3-00 tc mv0-00">Management And Staff Overview</h1>
                     <p className="lh-copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, dicta nihil voluptatibus accusantium aspernatur beatae eius nisi fugiat, consequatur quod minus nesciunt laboriosam libero, quibusdam perferendis ut rerum provident et.
                     </p>
                     <p className="lh-copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, dicta nihil voluptatibus accusantium aspernatur beatae eius nisi fugiat, consequatur quod minus nesciunt laboriosam libero, quibusdam perferendis ut rerum provident et.
                     </p>
-                </hgroup>
+                </section>
                 <div className="">
                     <h1 className="f3-00">Management</h1>
                     <div className="grid gtc12 ggap2-00 w-100 pr1-00 mb4-00 tc"
@@ -322,7 +296,7 @@ function Management() {
                 </div>
                 <div className="">
                     <h1 className="f3-00">External Consultants / Partners</h1>
-                    <div className="grid gtc12 ggap2-00 w-100 pr1-00 mb4-00 tc"
+                    <div className="grid gtc12 ggap2-00 w-100 pr1-00 mb1-00 tc"
                     >
                         <div className="gc1s3 gr1s1
                             flex items-center justify-center 
@@ -408,11 +382,8 @@ function Management() {
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
-        
-        
     );
     }
 

@@ -2,6 +2,7 @@
 // import vw1 from "../../assets/images/wines/vw_1.jpg";
 import vw2 from "../../../assets/images/infodesk/contactus.jpg";
 import vw3 from "../../../assets/images/placeholders/location.png";
+import LayoutHeader from "../../layouts/LayoutHeader";
 
 function ContactUs() {
     // const u = [
@@ -20,43 +21,21 @@ function ContactUs() {
         <article className="mt5-00-m
             "
         >
-            <header className=" bg-blue0
-                tc grid gtc1 justify-center items-center h-100"
-            >
-                <img src={vw2}
-                    alt=""
-                    className="gc1s1 gr1s1 cover vh-50 flex"
-                />
-                <hgroup className="gc1s1 gr1s1 bg-black-50 h-100 flex justify-center items-center">
-                    <h2 className=" mb0-00 f3-00 white-90">
-                        Contact Us
-                    </h2>
-                </hgroup>
-                
-                <section className="flex flex-column justify-center items-center pv4-00 white-90"
-                >
-                    <h2>Volta Winery can be contacted through the following addresses.</h2>
-                    <p>
-                        Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice.
-                    </p>
-                    <p>
-                        Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice.
-                    </p>
-                    <p>
-                        Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice.
-                    </p>
-
-                </section>
-            </header>
+            <LayoutHeader title="Contact Us"
+                overview="Volta Winery can be contacted through the following addresses."
+                image={vw2}
+                details={`Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice. Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice. Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice.`
+                }
             
+            />
             <main>
-                <div className=" mv1-00">
+                <div className=" mv1-00 pl1-00">
                     
                     <div id="ContactsAndDirection" className="flex flex-column justify-start">
                         <div>
                             <header className="tc">
                                 <hgroup className="mb2-00">
-                                    <h2>Contacts</h2> 
+                                    <h2>Phone Calls</h2> 
                                 
                                     <p className="lh-copy">
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, dicta nihil voluptatibus accusantium aspernatur beatae eius nisi fugiat, consequatur quod minus nesciunt laboriosam libero, quibusdam perferendis ut rerum provident et.

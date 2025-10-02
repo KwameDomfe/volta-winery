@@ -1,4 +1,5 @@
 import { Link, NavLink, Outlet } from "react-router-dom";
+// import vw2 from "../../assets/images/placeholders/location.png";
 import { AiOutlineMenu, AiOutlineClose} from 'react-icons/ai';
 import { useState } from "react";
 
@@ -58,8 +59,7 @@ function InfoLayout() {
     return (
         <article id="infodesk-layout"
             className="flex-m justify-start container90"
-        >
-            
+        > 
             <header className=" flex flex-column justify-between 
                 sticky top-0 
                 bg-black-90
@@ -136,8 +136,12 @@ function InfoLayout() {
                         
                 </nav>
             </header>
-            <div className="w-100-m ">
-                <Outlet />
+            <div className="w-100-m">
+                
+                <div className="">
+                    <Outlet />
+                </div>
+                
             </div>
         </article>
     );

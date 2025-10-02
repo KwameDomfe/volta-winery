@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
-import { socialNav } from "../../assets/data/menuNav";
+// import { socialNav } from "../../assets/data/menuNav";
 import { HiOutlineMail } from 'react-icons/hi';
 import { FaNutritionix } from 'react-icons/fa';
 import { PiWineFill } from 'react-icons/pi';
 import { GiManualJuicer } from 'react-icons/gi';
 import { BiSolidBookContent } from 'react-icons/bi';
+import SocialNav from "../molecules/SocialNav";
 // const mainmenu
 function MainFooter() {
     return (
@@ -394,43 +395,3 @@ export default MainFooter;
 //     )
 
 // }
-
-function SocialNav(params) {
-    
-    return (
-        <nav id="m__socialMediaNav" 
-            className="flex-l w-100-l mv1-00-l" 
-            tabIndex="0"
-        >
-            <ul id="social_media_list" 
-                className=" flex justify-around items-center w-100"
-            >
-                {
-                    socialNav.map(
-                        (q) => {
-
-                            return (
-                                <li key={q.id}
-                                    className="pa0-25  ba br5-00  b--white bg-white"
-                                >
-                                    <a title={q.title}
-                                        rel="noopener noreferrer" 
-                                        className="" 
-                                        href={q.url} 
-                                        target="_blank"
-                                        
-                                    >
-                                        <img src={q.icon}
-                                            alt={q.name}
-                                            className="w1-00"
-                                        />
-                                    </a>       
-                                </li>
-                            )
-                        }
-                    )
-                }
-            </ul>
-        </nav>
-    )
-}

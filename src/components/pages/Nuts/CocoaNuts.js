@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import vw2 from "../../../assets/images/fruitJuice/vw_6.jpg";
+import LayoutHeader from "../../layouts/LayoutHeader";
 
 function CocoaNuts() {
     const u = [
@@ -18,35 +19,13 @@ function CocoaNuts() {
         <article className="
             "
         >
-            <header className=" bg-blue0
-                tc grid gtc1 justify-center items-center h-100"
-            >
-                <img src={vw2}
-                    alt=""
-                    className="gc1s1 gr1s1 cover vh-50 flex"
-                />
-                <hgroup className="gc1s1 gr1s1 bg-black-50 h-100 flex justify-center items-center">
-                    <h2 className=" mb0-00 f3-00 white-90 ttc">
-                        cocoa Nuts
-                    </h2>
-                </hgroup>
-                
-                <section className="flex flex-column justify-center items-center pv4-00 white-90"
-                >
-                    <h2 className="ttc">cocoa Nuts Story Line....</h2>
-                    <p>
-                        Taste our Made in Ghana Nuts and our delicious cocoa Nuts.
-                    </p>
-                    <p>
-                        Taste our Made in Ghana Nuts and our delicious cocoa Nuts.
-                    </p>
-                    <p>
-                        Taste our Made in Ghana Nuts and our delicious cocoa Nuts.
-                    </p>
-
-                </section>
-            </header>
+            <LayoutHeader title="Cocoa Nuts"
+                overview="Volta Winery can be  through the following addresses."
+                image={vw2}
+                details={`Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice. Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice. Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice.`
+                }
             
+            />
             <main>
                 <section className="mb4-00">
                     <header className="

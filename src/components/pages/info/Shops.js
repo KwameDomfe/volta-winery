@@ -1,6 +1,7 @@
 // import { Link } from "react-router-dom";
 // import vw1 from "../../assets/images/wines/vw_1.jpg";
 import vw2 from "../../../assets/images/voltaWinery/vw_17.jpg";
+import LayoutHeader from "../../layouts/LayoutHeader";
 // import vw3 from "../../../assets/images/placeholders/location.png";
 
 function RandD() {
@@ -20,37 +21,16 @@ function RandD() {
         <article className="mt5-00-m
             "
         >
-            <header className=" bg-blue0
-                tc grid gtc1 justify-center items-center h-100"
-            >
-                <img src={vw2}
-                    alt=""
-                    className="gc1s1 gr1s1 cover vh-50 flex"
-                />
-                <hgroup className="gc1s1 gr1s1 bg-black-50 h-100 flex justify-center items-center">
-                    <h2 className=" mb0-00 f3-00 white-90">
-                        Shops
-                    </h2>
-                </hgroup>
-                
-                <section className="flex flex-column justify-center items-center pv4-00 white-90"
-                >
-                    <h2>Volta Winery can be Shops and Developmented through the following addresses.</h2>
-                    <p>
-                        Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice.
-                    </p>
-                    <p>
-                        Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice.
-                    </p>
-                    <p>
-                        Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice.
-                    </p>
-
-                </section>
-            </header>
+            <LayoutHeader title="Shops"
+                overview="Volta Winery can be  through the following shops..."
+                image={vw2}
+                details={`Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice. Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice. Taste our Made in Ghana Wines and our delicious Cocoa Fruit Juice.`
+                }
             
+            />
+
             <main>
-                <div className=" mv1-00">
+                <div className=" mv1-00 pl1-00">
                     
                     <div id="Shops and DevelopmentsAndDirection" className="flex flex-column justify-start">
                         <div>
