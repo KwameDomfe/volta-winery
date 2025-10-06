@@ -5,7 +5,7 @@ import MainFooter from "../organisms/MainFooter";
 function RootLayout() {
     return (
         <article className="flex flex-column justify-between
-            w-100 bg-black-20 relative"
+            w-100 bg-black-2 relative"
         >
             
             <MainHeader />

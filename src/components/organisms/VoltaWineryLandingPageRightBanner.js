@@ -10,7 +10,7 @@ const VoltaWineryLandingPageRightBanner = ({url, title, description1, descriptio
             linear-gradient
             "
         >
-            <div className="gc2s10 gc6s5-m gr1s1 mt2-00 mt6-00-m">
+            <div className="gc2s10 gc6s6-m gr1s1 mt2-00 mt6-00-m">
                 <RightBanner 
                     title = {title}
                     description1={description1}

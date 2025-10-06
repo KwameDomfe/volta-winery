@@ -89,7 +89,10 @@
 
 .flex-shrink-0{flex-shrink:0}
 .flex-shrink-1{flex-shrink:1}
-
+.f-cc{display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /*----- DISPLAY FLOAT-----*/
 .fl{float:left}
 .fr{float:right}

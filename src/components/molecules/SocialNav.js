@@ -2,12 +2,12 @@ import React from 'react'
 import { socialNav } from "../../assets/data/menuNav";
 const SocialNav = () => {
     return (
-        <nav id="m__socialMediaNav" 
-            className="flex items-center justify-center w-60 w-100-m  mv1-00-l" 
+         <nav id="m__socialMediaNav" 
+            className="flex items-center justify-center w-100 " 
             tabIndex="0"
         >
             <ul id="social_media_list" 
-                className=" flex justify-around items-center  w-100"
+                className=" flex justify-around items-center w-60"
             >
                 {
                     socialNav.map(
@@ -15,7 +15,7 @@ const SocialNav = () => {
 
                             return (
                                 <li key={q.id}
-                                    className="pa0-25  ba br5-00  b--white-50 bg-white1"
+                                    className="pa0-25  ba br5-00  b--black-20 bg-white1"
                                 >
                                     <a title={q.title}
                                         rel="noopener noreferrer" 

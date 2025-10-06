@@ -60,7 +60,7 @@ function HomePage() {
                 
             </section>
             <section id="" 
-                className="bg-gold mb1-00"
+                className="mb1-00"
             >
                 <ValuableStatsSection />
             </section>
@@ -68,7 +68,7 @@ function HomePage() {
                 className="mb1-00"
             >
                 <div id=""
-                    className="grid gtc12"
+                    className="grid gtc12  "
                 >
                     <BackgroundImage 
                         image={ggg}

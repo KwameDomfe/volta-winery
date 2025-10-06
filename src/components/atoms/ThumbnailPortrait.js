@@ -1,14 +1,11 @@
 import React from 'react'
 
-const ThumbnailPortrait = ({image, description}) => {
+const ThumbnailPortrait = ({image, width, height, objectFit, description}) => {
   return (
-    <figure className="ba b--gold bw2"
-    >
-        <img src={image}
-            alt={description}
-            className="h-100 w-100 w10-00-l cover"
-        />
-    </figure>
+    <img src={image}
+        alt={description}
+        className={`${width} ${height} ${objectFit}`}
+    />
   )
 }
 

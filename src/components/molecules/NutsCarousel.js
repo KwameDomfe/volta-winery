@@ -9,14 +9,20 @@ const NutsCarousel = () => {
     >
         <ThumbnailPortrait 
             image={ggg}
+            width = "w12-00"
+            objectFit="cover"
             description={'cocoa wine'}
         />
         <ThumbnailPortrait 
             image={fff}
+            width = "w12-00"
+            objectFit="cover"
             description={'cashew wine'}
         />
         <ThumbnailPortrait 
             image={hhh}
+            width = "w12-00"
+            objectFit="cover"
             description={'coffee wine'}
         />
     </div>

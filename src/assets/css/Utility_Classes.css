@@ -70,7 +70,7 @@ img{
 .active {
     border-style: none;
     /* background-color: gold; */
-    /* transform: scale(0.9); */
+    transform: scale(0.9);
     
 }
 
@@ -136,10 +136,10 @@ a:hover{
     overflow: auto; 
 }
 
-.container90-ma{
+.container90-m{
     width: 90%;
     min-width: 380px;
-    max-width: 1024px;  
+    max-width: 1280px;  
     overflow: auto;      
 }
 }
