@@ -17,7 +17,7 @@ function MainFooter() {
                     // },
                     //     5000
             // )
-        }    
+        },[]    
     )
     return (
         
