@@ -4,7 +4,7 @@ const OrderForEveryOccation = () => {
     return (
         <section className="flex flex-column justify-center items-center 
             tc pa1-00
-            vh-50 w-100
+            vh-50-m w-100
             mv1-00
             bg-gray
             white-90 f2-00 f3-00-m"
